@@ -1,0 +1,34 @@
+.profilePic {
+  height: 40vmin;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 0.75rem;
+  border-radius: 50%;
+  border-color: #081f37;
+}
+
+body {
+  background-color: #1e549f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3vmin);
+}
+
+h1 {
+  color: #5fc9f3;
+}
+h2 {
+  color:  #2e79ba;
+}
+
+/*
+Colour Theme
+
+1 - #081f37
+2 - #5fc9f3
+3 - #2e79ba
+4 - #1e549f
+*/
