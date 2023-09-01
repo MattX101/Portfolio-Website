@@ -1,0 +1,62 @@
+.overlay {
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #081f37;
+  overflow-x: hidden;
+  transition: 1.0s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay p {
+  text-decoration: none;
+  padding: calc(0.5vmin);
+  font-size: calc(3vmin);
+  color:  #2e79ba;
+  display: block;
+  transition: 0.5s;
+}
+
+.linkText:hover, .linkText:focus {
+  color: #5fc9f3;
+}
+#closeText:hover, #closeText:focus {
+  color: red;
+}
+
+button {
+  cursor: pointer;
+  color: #2e79ba;
+  border: none;
+  border-radius: calc(10vmin);
+  font-size: calc(2vmin);
+  background-color: #081f37;
+  animation-name: animate-button;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+button:hover, button:focus {
+  color: #5fc9f3;
+}
+@keyframes animate-button {
+  0% 
+  {
+    padding: calc(1vmin) calc(2vmin);
+  }
+  50% 
+  {
+    padding: calc(1vmin) calc(4vmin);
+  }
+  100% 
+  {
+    padding: calc(1vmin) calc(2vmin);
+  }
+}
