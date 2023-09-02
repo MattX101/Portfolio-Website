@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #1e549f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3vmin);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  color: #5fc9f3;
+}
+
+h2 {
+  color: #2e79ba;
+}
+
+/*
+Colour Theme
+
+1 - #081f37
+2 - #5fc9f3
+3 - #2e79ba
+4 - #1e549f
+*/

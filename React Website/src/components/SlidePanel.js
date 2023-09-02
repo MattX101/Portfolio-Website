@@ -1,4 +1,9 @@
 const SlidePanel = () => {
+    function loadURL(url) {
+        var currentURL = window.location.href;
+        window.location.href = currentURL + url;
+    }
+
     function toggle(value) {
         document.getElementById("slideOverlay").style.width = `${value}%`;
 
@@ -15,10 +20,9 @@ const SlidePanel = () => {
                 <div className="overlay-content">
                     <br />
 
-                    <p className="linkText"><b>Filler 1</b></p>
-                    <p className="linkText"><b>Filler 2</b></p>
-                    <p className="linkText"><b>Filler 3</b></p>
-                    <p className="linkText"><b>Filler 4</b></p>
+                    <p className="linkText" onClick={() => loadURL('home')}><b>Home</b></p>
+                    <p className="linkText" onClick={() => loadURL('about')}><b>About Me</b></p>
+                    <p className="linkText" onClick={() => loadURL('contact')}><b>Contact Me</b></p>
 
                     <br />
                     <br />
