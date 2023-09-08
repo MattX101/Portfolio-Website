@@ -32,7 +32,7 @@
   color: red;
 }
 
-button {
+#slideButton {
   cursor: pointer;
   color: #2e79ba;
   border: none;
@@ -43,7 +43,7 @@ button {
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
-button:hover, button:focus {
+#slideButton:hover, #slideButton:focus {
   color: #5fc9f3;
 }
 @keyframes animate-button {

@@ -1,7 +1,8 @@
+import '../styles/SlidePanel.css';
+
 const SlidePanel = () => {
     function loadURL(url) {
-        var currentURL = window.location.href;
-        window.location.href = currentURL + url;
+        window.location.href = "http://localhost:3000/" + url;
     }
 
     function toggle(value) {
@@ -14,7 +15,9 @@ const SlidePanel = () => {
 
     return (
         <div>
-            <button onClick={() => toggle('100')}><b>Continue</b></button>
+            <button id="slideButton" onClick={() => toggle('100')}>
+                <b>Continue</b>
+            </button>
 
             <div id="slideOverlay" className="overlay">
                 <div className="overlay-content">

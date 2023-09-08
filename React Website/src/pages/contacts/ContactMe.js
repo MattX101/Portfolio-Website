@@ -1,8 +1,11 @@
+import MainPagesNavMenu from '../../components/MainPagesNavMenu.js'
+
 function LoadPage() {
     return (
-        <body>
-            <h1>Contact</h1>
-        </body>
+        <div className="contactMe">
+            <MainPagesNavMenu title='Contact Me'
+            activeLink='contact'/>
+        </div>
     );
 }
 
