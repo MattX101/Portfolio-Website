@@ -1,29 +1,19 @@
 header {
-    background-color: #081f37;
-    color: white;
-    display: block;
-    padding: 50px;
-    text-align: center;
+  background-color: #081f37;
+  color: white;
+  display: block;
+  padding: 5vh;
+  text-align: center;
 }
-
 #linksRow button {
-    background-color: #2e79ba;
-    color: #081f37;
-    border: none;
-    cursor: pointer;
-    padding: 16px;
-    font-size: calc(1.5vmin);
-    width: 33.33%;
+  background-color: #2e79ba;
+  color: #081f37;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  width: 33.33%;
 }
-#linksRow button:hover, #linksRow button:focus {
-    background-color: #5fc9f3;
-    color: #081f37;
-}
-
-/* Style the tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
+#linksRow :hover,
+#linksRow :focus {
+  background-color: #5fc9f3;
 }

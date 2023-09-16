@@ -1,62 +1,67 @@
-.centerContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+@import "../styles/imports/colours.less";
+@import "../styles/mixins/CenterContent.less";
+
 .overlay {
   height: 100%;
   width: 0;
   top: 0;
   left: 0;
   position: fixed;
-  background-color: #081f37;
+  background-color: @darkColour;
   overflow-x: hidden;
-  transition: 1s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  transition: 1.0s;
+  .centerContent();
 }
+
 .linkText {
   text-decoration: none;
   text-align: center;
   padding: 0.5vh;
   font-size: 3vh;
-  color: #2e79ba;
+  color: @primaryColour;
   display: block;
   transition: 0.5s;
+
+  :hover,
+  :focus {
+    color: @lightColour;
+  }
 }
-.linkText :hover,
-.linkText :focus {
-  color: #5fc9f3;
+
+#closeText {
+
+  :hover,
+  :focus {
+    color: red;
+  }
 }
-#closeText :hover,
-#closeText :focus {
-  color: red;
-}
+
 #slideButton {
   cursor: pointer;
-  color: #2e79ba;
+  color: @primaryColour;
   border: none;
   border-radius: 50px;
   font-size: 2vh;
-  background-color: #081f37;
+  background-color: @darkColour;
   animation-name: animate-button;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+
+  :hover,
+  :focus {
+    color: @lightColour;
+  }
 }
-#slideButton :hover,
-#slideButton :focus {
-  color: #5fc9f3;
-}
+
 @keyframes animate-button {
   0% {
     padding: 1vw 2vw;
   }
+
   50% {
     padding: 1vw 4vw;
   }
+
   100% {
     padding: 1vw 2vw;
   }

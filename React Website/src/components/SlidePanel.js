@@ -24,7 +24,7 @@ const SlidePanel = () => {
                     <br />
 
                     <p className="linkText" onClick={() => loadURL('home')}><b>Home</b></p>
-                    <p className="linkText" onClick={() => loadURL('about')}><b>About Me</b></p>
+                    <p className="linkText" onClick={() => loadURL('about')}><b>About Website</b></p>
                     <p className="linkText" onClick={() => loadURL('contact')}><b>Contact Me</b></p>
 
                     <br />

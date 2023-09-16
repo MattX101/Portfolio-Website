@@ -1,0 +1,24 @@
+@import "../styles/imports/colours.less";
+
+header {
+    background-color: @darkColour;
+    color: white;
+    display: block;
+    padding: 5vh;
+    text-align: center;
+}
+
+#linksRow {
+    button {
+        background-color: @primaryColour;
+        color: @darkColour;
+        border: none;
+        cursor: pointer;
+        padding: 16px;
+        width: 33.33%;
+    }
+
+    :hover,:focus {
+        background-color: @lightColour;
+    }
+}

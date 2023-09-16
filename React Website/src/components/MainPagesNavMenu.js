@@ -25,7 +25,7 @@ const NavMenu = ({title, activeLink}) => {
                     <b>Home</b>
                 </button>
                 <button id="about" onClick={() => loadURL('about')}>
-                    <b>About Me</b>
+                    <b>About Website</b>
                 </button>
                 <button id="contact" onClick={() => loadURL('contact')}>
                     <b>Contact Me</b>
