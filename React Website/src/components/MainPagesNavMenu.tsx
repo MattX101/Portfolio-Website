@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import '../styles/MainPagesNavMenu.css';
+import React from 'react';
 
 const NavMenu = ({title, activeLink}) => {
     useEffect(() => {
-        var activeLinkElement = document.getElementById(activeLink);
+        var activeLinkElement = document.getElementById(activeLink) as HTMLElement;
         activeLinkElement.disabled = true;
         activeLinkElement.style.pointerEvents = 'none';
         activeLinkElement.style.backgroundColor = "#081f37";

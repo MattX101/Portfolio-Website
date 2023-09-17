@@ -1,3 +1,4 @@
+import React from 'react';
 import '../styles/SlidePanel.css';
 
 const SlidePanel = () => {
@@ -6,7 +7,7 @@ const SlidePanel = () => {
     }
 
     function toggle(value) {
-        document.getElementById("slideOverlay").style.width = `${value}%`;
+        (document.getElementById("slideOverlay") as HTMLElement).style.width = `${value}%`;
 
         var links = document.getElementsByClassName("linkText");
         for (var i = 0, length = links.length; i < length; i++)

@@ -1,6 +1,7 @@
 import './Landing.css';
-import SlidePanel from '../../components/SlidePanel'
+import SlidePanel from '../../components/SlidePanel.tsx';
 import profilePic from '../../images/Profile Pic.png';
+import React from 'react';
 
 function LoadPage() {
   return (

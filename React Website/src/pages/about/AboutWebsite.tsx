@@ -1,4 +1,5 @@
-import MainPagesNavMenu from '../../components/MainPagesNavMenu.js'
+import React from 'react';
+import MainPagesNavMenu from '../../components/MainPagesNavMenu.tsx'
 
 function LoadPage() {
     return (
