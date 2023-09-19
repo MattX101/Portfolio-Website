@@ -8,9 +8,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+p {
+  font-size: 1.5vmin;
+}
 h1 {
   color: #5fc9f3;
+  font-size: 3.5vmin;
 }
 h2 {
   color: #2e79ba;
+  font-size: 2.5vmin;
+}
+h3 {
+  color: #2e79ba;
+  font-size: 1.75vmin;
 }

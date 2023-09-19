@@ -1,0 +1,27 @@
+#profile,
+#tabs {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#profile {
+  width: 50%;
+}
+#profile img {
+  width: 100%;
+  pointer-events: none;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 0.75rem;
+  border-color: #081f37;
+}
+@media (max-width: 1500px) {
+  #tabs {
+    width: 75%;
+  }
+}
+@media (min-width: 1500px) {
+  #tabs {
+    width: 1125px;
+  }
+}

@@ -1,0 +1,57 @@
+@import "../styles/imports/colours.less";
+
+#tabs {
+    overflow: hidden;
+}
+
+.link {
+    float: left;
+    width: 25%;
+    background-color: @darkColour;
+    color: @lightColour;
+    border-style: none;
+    cursor: pointer;
+    
+    position: relative;
+    top: 0vmin;
+    animation-name: linkNotHoveredAnimation;
+    animation-duration: 0.2s;
+}
+
+.link:hover:not(.active) {
+    font-weight: bold;
+    background-color: @lightColour;
+    color: @darkColour;
+
+    position: relative;
+    top: 1vmin;
+    animation-name: linkHoveredAnimation;
+    animation-duration: 0.2s;
+}
+
+.active {
+    font-weight: bold;
+    background-color: @primaryColour;
+    position: relative;
+    top: 1vmin;
+    cursor:default;
+}
+
+@keyframes linkHoveredAnimation {
+    from {
+        top: 0vmin;
+    }
+
+    to {
+        top: 1vmin;
+    }
+}
+@keyframes linkNotHoveredAnimation {
+    from {
+        top: 1vmin;
+    }
+
+    to {
+        top: 0vmin;
+    }
+}

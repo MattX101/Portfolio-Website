@@ -1,4 +1,4 @@
-import './Landing.css';
+import './style.css';
 import SlidePanel from '../../components/SlidePanel.tsx';
 import profilePic from '../../images/Profile Pic.png';
 import React from 'react';

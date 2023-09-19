@@ -16,9 +16,38 @@ header {
         cursor: pointer;
         padding: 16px;
         width: 33.33%;
+        
+        position: relative;
+        bottom: 1vmin;
+        animation-name: outButtonAnimation;
+        animation-duration: 0.2s;
     }
 
-    :hover,:focus {
+    button:hover,
+    button:focus {
         background-color: @lightColour;
+
+        bottom: 0vmin;
+        animation-name: overButtonAnimation;
+        animation-duration: 0.2s;
+    }
+}
+
+@keyframes overButtonAnimation {
+    from {
+        bottom: 1vmin;
+    }
+
+    to {
+        bottom: 0vmin;
+    }
+}
+@keyframes outButtonAnimation {
+    from {
+        bottom: 0vmin;
+    }
+
+    to {
+        bottom: 1vmin;
     }
 }

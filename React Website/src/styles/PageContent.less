@@ -1,0 +1,43 @@
+@import './imports/colours.less';
+
+.contents_threeFourthWidth,
+.contents_halfWidth {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: @primaryColour;
+    text-align: center;
+
+    h1, h2 {
+        color: @lightColour;
+    }
+    
+    p, h3 {
+        color: @darkColour;
+    }
+
+    hr {
+        width: 75%;
+        color: @darkColour;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    .contents_threeFourthWidth {
+        width: 75%;
+    }
+    .contents_halfWidth {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    .contents_threeFourthWidth {
+        width: 1125px;
+    }
+    .contents_halfWidth {
+        width: 750px;
+    }
+}

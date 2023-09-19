@@ -9,6 +9,7 @@ const NavMenu = ({title, activeLink}) => {
         activeLinkElement.style.pointerEvents = 'none';
         activeLinkElement.style.backgroundColor = "#081f37";
         activeLinkElement.style.color = "#2e79ba";
+        activeLinkElement.style.bottom = "0vmin";
     });
 
     function loadURL(url) {
@@ -32,6 +33,8 @@ const NavMenu = ({title, activeLink}) => {
                     <b>Contact Me</b>
                 </button>
             </div>
+            
+            <br/>
         </div>
     );
 }
