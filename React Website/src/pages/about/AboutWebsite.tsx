@@ -1,4 +1,4 @@
-import './style.css'
+import './style/style.css';
 import '../../styles/SplitTab.css'
 import React from 'react';
 import MainPagesNavMenu from '../../components/MainPagesNavMenu.tsx'
