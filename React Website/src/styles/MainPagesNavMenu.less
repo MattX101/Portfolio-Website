@@ -1,33 +1,35 @@
 @import "../styles/imports/colours.less";
 
 header {
-    background-color: @darkColour;
-    color: white;
     display: block;
     padding: 5vh;
     text-align: center;
+
+    background-color: @darkColour;
+    color: white;
 }
 
 #linksRow {
     button {
-        background-color: @primaryColour;
-        color: @darkColour;
-        border: none;
-        cursor: pointer;
-        padding: 16px;
-        width: 33.33%;
-        
         position: relative;
         bottom: 1vmin;
+        padding: 16px;
+        width: 33.33%;
+        cursor: pointer;
+        border: none;
+
+        background-color: @primaryColour;
+        color: @darkColour;
+
         animation-name: outButtonAnimation;
         animation-duration: 0.2s;
     }
 
     button:hover,
     button:focus {
+        bottom: 0vmin;
         background-color: @lightColour;
 
-        bottom: 0vmin;
         animation-name: overButtonAnimation;
         animation-duration: 0.2s;
     }

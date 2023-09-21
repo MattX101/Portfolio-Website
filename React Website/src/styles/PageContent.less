@@ -1,12 +1,11 @@
 @import './imports/colours.less';
+@import './mixins/CenterAlignment.less';
 
 .contents_threeFourthWidth,
 .contents_halfWidth {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: @primaryColour;
+    .centerAlignment();
     text-align: center;
+    background-color: @primaryColour;
 
     h1, h2 {
         color: @lightColour;

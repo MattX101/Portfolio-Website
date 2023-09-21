@@ -1,26 +1,26 @@
 header {
-  background-color: #081f37;
-  color: white;
   display: block;
   padding: 5vh;
   text-align: center;
+  background-color: #081f37;
+  color: white;
 }
 #linksRow button {
-  background-color: #2e79ba;
-  color: #081f37;
-  border: none;
-  cursor: pointer;
-  padding: 16px;
-  width: 33.33%;
   position: relative;
   bottom: 1vmin;
+  padding: 16px;
+  width: 33.33%;
+  cursor: pointer;
+  border: none;
+  background-color: #2e79ba;
+  color: #081f37;
   animation-name: outButtonAnimation;
   animation-duration: 0.2s;
 }
 #linksRow button:hover,
 #linksRow button:focus {
-  background-color: #5fc9f3;
   bottom: 0vmin;
+  background-color: #5fc9f3;
   animation-name: overButtonAnimation;
   animation-duration: 0.2s;
 }

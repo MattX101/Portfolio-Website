@@ -2,32 +2,32 @@
   overflow: hidden;
 }
 .link {
+  position: relative;
   float: left;
+  top: 0vmin;
   width: 25%;
   background-color: #081f37;
   color: #5fc9f3;
   border-style: none;
   cursor: pointer;
-  position: relative;
-  top: 0vmin;
   animation-name: linkNotHoveredAnimation;
   animation-duration: 0.2s;
 }
 .link:hover:not(.active) {
+  position: relative;
+  top: 1vmin;
   font-weight: bold;
   background-color: #5fc9f3;
   color: #081f37;
-  position: relative;
-  top: 1vmin;
   animation-name: linkHoveredAnimation;
   animation-duration: 0.2s;
 }
 .active {
-  font-weight: bold;
-  background-color: #2e79ba;
   position: relative;
   top: 1vmin;
   cursor: default;
+  font-weight: bold;
+  background-color: #2e79ba;
 }
 @keyframes linkHoveredAnimation {
   from {

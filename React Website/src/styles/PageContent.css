@@ -1,10 +1,15 @@
+.centerAlignment {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .contents_threeFourthWidth,
 .contents_halfWidth {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #2e79ba;
   text-align: center;
+  background-color: #2e79ba;
 }
 .contents_threeFourthWidth h1,
 .contents_halfWidth h1,

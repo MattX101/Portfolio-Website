@@ -5,36 +5,38 @@
 }
 
 .link {
+    position: relative;
     float: left;
+    top: 0vmin;
     width: 25%;
+
     background-color: @darkColour;
     color: @lightColour;
     border-style: none;
     cursor: pointer;
-    
-    position: relative;
-    top: 0vmin;
+
     animation-name: linkNotHoveredAnimation;
     animation-duration: 0.2s;
 }
 
 .link:hover:not(.active) {
+    position: relative;
+    top: 1vmin;
     font-weight: bold;
+
     background-color: @lightColour;
     color: @darkColour;
 
-    position: relative;
-    top: 1vmin;
     animation-name: linkHoveredAnimation;
     animation-duration: 0.2s;
 }
 
 .active {
-    font-weight: bold;
-    background-color: @primaryColour;
     position: relative;
     top: 1vmin;
-    cursor:default;
+    cursor: default;
+    font-weight: bold;
+    background-color: @primaryColour;
 }
 
 @keyframes linkHoveredAnimation {

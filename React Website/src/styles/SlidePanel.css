@@ -5,13 +5,13 @@
   justify-content: center;
 }
 .overlay {
+  overflow: hidden;
+  position: fixed;
   height: 100%;
   width: 0;
   top: 0;
   left: 0;
-  position: fixed;
   background-color: #081f37;
-  overflow-x: hidden;
   transition: 1s;
   display: flex;
   flex-direction: column;
@@ -19,13 +19,13 @@
   justify-content: center;
 }
 .linkText {
+  display: block;
+  padding: 0.5vh;
+  transition: 0.5s;
   text-decoration: none;
   text-align: center;
-  padding: 0.5vh;
   font-size: 3vh;
   color: #2e79ba;
-  display: block;
-  transition: 0.5s;
 }
 .linkText :hover,
 .linkText :focus {
@@ -37,10 +37,10 @@
 }
 #slideButton {
   cursor: pointer;
+  font-size: 2vh;
   color: #2e79ba;
   border: none;
   border-radius: 50px;
-  font-size: 2vh;
   background-color: #081f37;
   animation-name: animate-button;
   animation-duration: 4s;

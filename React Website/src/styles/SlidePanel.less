@@ -2,25 +2,27 @@
 @import "../styles/mixins/CenterContent.less";
 
 .overlay {
+  overflow: hidden;
+  position: fixed;
   height: 100%;
   width: 0;
   top: 0;
   left: 0;
-  position: fixed;
+  
   background-color: @darkColour;
-  overflow-x: hidden;
   transition: 1.0s;
   .centerContent();
 }
 
 .linkText {
+  display: block;
+  padding: 0.5vh;
+  transition: 0.5s;
+
   text-decoration: none;
   text-align: center;
-  padding: 0.5vh;
   font-size: 3vh;
   color: @primaryColour;
-  display: block;
-  transition: 0.5s;
 
   :hover,
   :focus {
@@ -38,11 +40,14 @@
 
 #slideButton {
   cursor: pointer;
+
+  font-size: 2vh;
   color: @primaryColour;
+
   border: none;
   border-radius: 50px;
-  font-size: 2vh;
   background-color: @darkColour;
+  
   animation-name: animate-button;
   animation-duration: 4s;
   animation-iteration-count: infinite;
