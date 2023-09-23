@@ -1,10 +1,9 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 import '../styles/SlidePanel.css';
 
 const SlidePanel = () => {
-    function loadURL(url) {
-        window.location.href = "http://localhost:3000/" + url;
-    }
+    const navigate = useNavigate();
 
     function toggle(value) {
         (document.getElementById("slideOverlay") as HTMLElement).style.width = `${value}%`;
@@ -24,9 +23,9 @@ const SlidePanel = () => {
                 <div className="overlay-content">
                     <br />
 
-                    <p className="linkText" onClick={() => loadURL('home')}><b>Home</b></p>
-                    <p className="linkText" onClick={() => loadURL('about')}><b>About Website</b></p>
-                    <p className="linkText" onClick={() => loadURL('contact')}><b>Contact Me</b></p>
+                    <p className="linkText" onClick={() => navigate('/home')}><b>Home</b></p>
+                    <p className="linkText" onClick={() => navigate('/about')}><b>About Website</b></p>
+                    <p className="linkText" onClick={() => navigate("/contact")}><b>Contact Me</b></p>
 
                     <br />
                     <br />
