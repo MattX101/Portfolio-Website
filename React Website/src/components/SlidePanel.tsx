@@ -14,7 +14,7 @@ const SlidePanel = () => {
     }
 
     return (
-        <div>
+        <>
             <button id="slideButton" onClick={() => toggle('100')}>
                 <b>Continue</b>
             </button>
@@ -35,7 +35,7 @@ const SlidePanel = () => {
                     <br />
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

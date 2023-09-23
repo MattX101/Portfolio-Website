@@ -6,14 +6,14 @@ import SkillsTab from '../../components/home/tabs/SkillsTab.tsx';
 
 const TabsManager = ({ state }) => {
     return (
-        <div>
+        <>
             {state === 1 && <AboutMeTab />}
             {state === 2 && <EducationTab />}
             {state === 3 && <WorkTab />}
             {state === 4 && <SkillsTab />}
 
             <br />
-        </div>
+        </>
     )
 }
 

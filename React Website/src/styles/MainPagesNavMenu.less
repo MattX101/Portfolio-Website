@@ -1,55 +1,26 @@
-@import "../styles/imports/colours.less";
+@import "./imports/colours.less";
+@import "./mixins/navbar/NavBarContent.less";
+@import "./mixins/navbar/NavBarAnimations.less";
 
 header {
     display: block;
-    padding: 5vh;
+    padding: 50px;
     text-align: center;
-
     background-color: @darkColour;
-    color: white;
 }
 
 #linksRow {
     button {
-        position: relative;
+        .lightThreeColNavBar();
+        .hoverOutDownAnimation();
         bottom: 1vmin;
         padding: 16px;
-        width: 33.33%;
-        cursor: pointer;
-        border: none;
-
-        background-color: @primaryColour;
-        color: @darkColour;
-
-        animation-name: outButtonAnimation;
-        animation-duration: 0.2s;
     }
 
     button:hover,
     button:focus {
+        .hoveredThreeColNavBar();
+        .hoverOnDownAnimation();
         bottom: 0vmin;
-        background-color: @lightColour;
-
-        animation-name: overButtonAnimation;
-        animation-duration: 0.2s;
-    }
-}
-
-@keyframes overButtonAnimation {
-    from {
-        bottom: 1vmin;
-    }
-
-    to {
-        bottom: 0vmin;
-    }
-}
-@keyframes outButtonAnimation {
-    from {
-        bottom: 0vmin;
-    }
-
-    to {
-        bottom: 1vmin;
     }
 }

@@ -15,7 +15,7 @@ const HomePageNavBar = () => {
     }
 
     return (
-        <div>
+        <>
             <div id="tabs">
                 <button className="link active" id="aboutMeButton" onClick={() => switchTab('aboutMeButton', 1)}>
                     <p>About Me</p>
@@ -34,7 +34,7 @@ const HomePageNavBar = () => {
             </div>
 
             <TabsManager state={showAddTask} />
-        </div>
+        </>
     )
 }
 

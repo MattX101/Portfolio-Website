@@ -1,59 +1,27 @@
-@import "../styles/imports/colours.less";
+@import "./imports/colours.less";
+@import "./mixins/navbar/NavBarContent.less";
+@import "./mixins/navbar/NavBarAnimations.less";
 
 #tabs {
     overflow: hidden;
 }
 
 .link {
-    position: relative;
-    float: left;
-    top: 0vmin;
-    width: 25%;
-
-    background-color: @darkColour;
-    color: @lightColour;
-    border-style: none;
-    cursor: pointer;
-
-    animation-name: linkNotHoveredAnimation;
-    animation-duration: 0.2s;
+    .darkFourColNavBar();
+    .hoverOutUpAnimation();
 }
 
 .link:hover:not(.active) {
-    position: relative;
+    .hoveredFourColNavBar();
+    .hoverOnUpAnimation();
     top: 1vmin;
     font-weight: bold;
-
-    background-color: @lightColour;
-    color: @darkColour;
-
-    animation-name: linkHoveredAnimation;
-    animation-duration: 0.2s;
 }
 
 .active {
-    position: relative;
-    top: 1vmin;
     cursor: default;
-    font-weight: bold;
     background-color: @primaryColour;
-}
 
-@keyframes linkHoveredAnimation {
-    from {
-        top: 0vmin;
-    }
-
-    to {
-        top: 1vmin;
-    }
-}
-@keyframes linkNotHoveredAnimation {
-    from {
-        top: 1vmin;
-    }
-
-    to {
-        top: 0vmin;
-    }
+    top: 1vmin;
+    font-weight: bold;
 }

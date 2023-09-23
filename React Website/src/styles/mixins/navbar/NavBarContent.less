@@ -1,0 +1,63 @@
+.settings {
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+// 3 Column Nav Bar
+.threeColNavBar {
+    width: 33.33%;
+}
+
+.lightThreeColNavBar {
+    .threeColNavBar();
+    .settings();
+
+    background-color: @primaryColour;
+    color: @darkColour;
+}
+
+.darkThreeColNavBar {
+    .threeColNavBar();
+    .settings();
+
+    background-color: @darkColour;
+    color: @lightColour;
+}
+
+.hoveredThreeColNavBar {
+    .threeColNavBar();
+    .settings();
+
+    background-color: @lightColour;
+    color: @darkColour;
+}
+
+// 4 Column Nav Bar
+.fourColNavBar {
+    width: 25%;
+}
+
+.lightFourColNavBar {
+    .fourColNavBar();
+    .settings();
+
+    background-color: @primaryColour;
+    color: @darkColour;
+}
+
+.darkFourColNavBar {
+    .fourColNavBar();
+    .settings();
+
+    background-color: @darkColour;
+    color: @lightColour;
+}
+
+.hoveredFourColNavBar {
+    .fourColNavBar();
+    .settings();
+
+    background-color: @lightColour;
+    color: @darkColour;
+}

@@ -16,7 +16,7 @@ const NavMenu = ({title, activeLink}) => {
     });
 
     return (
-        <div>
+        <>
             <header>
                 <h1>{title}</h1>
             </header>
@@ -34,7 +34,7 @@ const NavMenu = ({title, activeLink}) => {
             </div>
             
             <br/>
-        </div>
+        </>
     );
 }
 

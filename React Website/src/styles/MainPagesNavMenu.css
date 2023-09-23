@@ -1,42 +1,140 @@
-header {
-  display: block;
-  padding: 5vh;
-  text-align: center;
-  background-color: #081f37;
-  color: white;
-}
-#linksRow button {
+.settings {
   position: relative;
-  bottom: 1vmin;
-  padding: 16px;
+  cursor: pointer;
+  border: none;
+}
+.threeColNavBar {
   width: 33.33%;
+}
+.lightThreeColNavBar {
+  width: 33.33%;
+  position: relative;
   cursor: pointer;
   border: none;
   background-color: #2e79ba;
   color: #081f37;
-  animation-name: outButtonAnimation;
+}
+.darkThreeColNavBar {
+  width: 33.33%;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #081f37;
+  color: #5fc9f3;
+}
+.hoveredThreeColNavBar {
+  width: 33.33%;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #5fc9f3;
+  color: #081f37;
+}
+.fourColNavBar {
+  width: 25%;
+}
+.lightFourColNavBar {
+  width: 25%;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #2e79ba;
+  color: #081f37;
+}
+.darkFourColNavBar {
+  width: 25%;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #081f37;
+  color: #5fc9f3;
+}
+.hoveredFourColNavBar {
+  width: 25%;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #5fc9f3;
+  color: #081f37;
+}
+.animationDuration {
   animation-duration: 0.2s;
+}
+.hoverOnDownAnimation {
+  animation-name: hoverOnDownAnimation;
+  animation-duration: 0.2s;
+}
+@keyframes hoverOnDownAnimation {
+  from {
+    bottom: 1vmin;
+  }
+  to {
+    bottom: 0vmin;
+  }
+}
+.hoverOutDownAnimation {
+  animation-name: hoverOutDownAnimation;
+  animation-duration: 0.2s;
+}
+@keyframes hoverOutDownAnimation {
+  from {
+    bottom: 0vmin;
+  }
+  to {
+    bottom: 1vmin;
+  }
+}
+.hoverOnUpAnimation {
+  animation-name: hoverOnUpAnimation;
+  animation-duration: 0.2s;
+}
+@keyframes hoverOnUpAnimation {
+  from {
+    top: 0vmin;
+  }
+  to {
+    top: 1vmin;
+  }
+}
+.hoverOutUpAnimation {
+  animation-name: hoverOutUpAnimation;
+  animation-duration: 0.2s;
+}
+@keyframes hoverOutUpAnimation {
+  from {
+    top: 1vmin;
+  }
+  to {
+    top: 0vmin;
+  }
+}
+header {
+  display: block;
+  padding: 50px;
+  text-align: center;
+  background-color: #081f37;
+}
+#linksRow button {
+  width: 33.33%;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background-color: #2e79ba;
+  color: #081f37;
+  animation-name: hoverOutDownAnimation;
+  animation-duration: 0.2s;
+  bottom: 1vmin;
+  padding: 16px;
 }
 #linksRow button:hover,
 #linksRow button:focus {
-  bottom: 0vmin;
+  width: 33.33%;
+  position: relative;
+  cursor: pointer;
+  border: none;
   background-color: #5fc9f3;
-  animation-name: overButtonAnimation;
+  color: #081f37;
+  animation-name: hoverOnDownAnimation;
   animation-duration: 0.2s;
-}
-@keyframes overButtonAnimation {
-  from {
-    bottom: 1vmin;
-  }
-  to {
-    bottom: 0vmin;
-  }
-}
-@keyframes outButtonAnimation {
-  from {
-    bottom: 0vmin;
-  }
-  to {
-    bottom: 1vmin;
-  }
+  bottom: 0vmin;
 }
