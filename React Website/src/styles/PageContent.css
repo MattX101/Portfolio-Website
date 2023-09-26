@@ -28,6 +28,10 @@
   width: 75%;
   color: #081f37;
 }
+.contents_threeFourthWidth u,
+.contents_halfWidth u {
+  color: #5fc9f3;
+}
 @media (max-width: 1500px) {
   .contents_threeFourthWidth {
     width: 75%;

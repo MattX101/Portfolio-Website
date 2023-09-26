@@ -1,0 +1,51 @@
+.animationDuration {
+  animation-duration: 0.2s;
+}
+.hoverOnDownAnimation {
+  animation-name: hoverOnDownAnimation;
+  animation-duration: 0.2s;
+}
+@keyframes hoverOnDownAnimation {
+  from {
+    bottom: 1vmin;
+  }
+  to {
+    bottom: 0vmin;
+  }
+}
+.hoverOutDownAnimation {
+  animation-name: hoverOutDownAnimation;
+  animation-duration: 0.2s;
+}
+@keyframes hoverOutDownAnimation {
+  from {
+    bottom: 0vmin;
+  }
+  to {
+    bottom: 1vmin;
+  }
+}
+.hoverOnUpAnimation {
+  animation-name: hoverOnUpAnimation;
+  animation-duration: 0.2s;
+}
+@keyframes hoverOnUpAnimation {
+  from {
+    top: 0vmin;
+  }
+  to {
+    top: 1vmin;
+  }
+}
+.hoverOutUpAnimation {
+  animation-name: hoverOutUpAnimation;
+  animation-duration: 0.2s;
+}
+@keyframes hoverOutUpAnimation {
+  from {
+    top: 1vmin;
+  }
+  to {
+    top: 0vmin;
+  }
+}

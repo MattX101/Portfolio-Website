@@ -9,7 +9,7 @@ function LoadPage() {
       <img src={profilePic} className="profilePic" alt="logo" />
 
       <h1>Matthew Xuereb</h1>
-      <h2>"I don't Hello World, I Program the World"</h2>
+      <h2>"I don't Hello World, I Code the World"</h2>
       
       <SlidePanel/>
     </div>
