@@ -5,12 +5,32 @@
   justify-content: center;
 }
 .roundProfileImage {
-  height: 40vmin;
+  height: 200px;
   pointer-events: none;
   border-style: solid;
-  border-width: 0.75rem;
+  border-width: 8px;
   border-radius: 100%;
   border-color: #081f37;
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: portrait) {
+  .roundProfileImage {
+    height: 40vw;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: landscape) {
+  .roundProfileImage {
+    height: 40vh;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: portrait) {
+  .roundProfileImageResponsive {
+    height: 40vw;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: landscape) {
+  .roundProfileImageResponsive {
+    height: 40vh;
+  }
 }
 .landing {
   min-height: 100vh;
@@ -20,10 +40,20 @@
   justify-content: center;
 }
 .profilePic {
-  height: 40vmin;
+  height: 200px;
   pointer-events: none;
   border-style: solid;
-  border-width: 0.75rem;
+  border-width: 8px;
   border-radius: 100%;
   border-color: #081f37;
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: portrait) {
+  .profilePic {
+    height: 40vw;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: landscape) {
+  .profilePic {
+    height: 40vh;
+  }
 }

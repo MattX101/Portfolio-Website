@@ -66,10 +66,10 @@
 }
 @keyframes hoverOnDownAnimation {
   from {
-    bottom: 1vmin;
+    bottom: 12px;
   }
   to {
-    bottom: 0vmin;
+    bottom: 0px;
   }
 }
 .hoverOutDownAnimation {
@@ -78,10 +78,10 @@
 }
 @keyframes hoverOutDownAnimation {
   from {
-    bottom: 0vmin;
+    bottom: 0px;
   }
   to {
-    bottom: 1vmin;
+    bottom: 12px;
   }
 }
 .hoverOnUpAnimation {
@@ -93,7 +93,7 @@
     top: 0vmin;
   }
   to {
-    top: 1vmin;
+    top: 12px;
   }
 }
 .hoverOutUpAnimation {
@@ -102,10 +102,10 @@
 }
 @keyframes hoverOutUpAnimation {
   from {
-    top: 1vmin;
+    top: 12px;
   }
   to {
-    top: 0vmin;
+    top: 0px;
   }
 }
 header {
@@ -123,7 +123,7 @@ header {
   color: #081f37;
   animation-name: hoverOutDownAnimation;
   animation-duration: 0.2s;
-  bottom: 1vmin;
+  bottom: 12px;
   padding: 16px;
 }
 #linksRow button:hover,
@@ -136,5 +136,5 @@ header {
   color: #081f37;
   animation-name: hoverOnDownAnimation;
   animation-duration: 0.2s;
-  bottom: 0vmin;
+  bottom: 0px;
 }

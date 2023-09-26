@@ -8,7 +8,7 @@
   width: 0;
   top: 0;
   left: 0;
-  
+
   background-color: @darkColour;
   transition: 1.0s;
   .centerContent();
@@ -16,7 +16,7 @@
 
 .linkText {
   display: block;
-  padding: 0.5vh;
+  padding: 4px;
   transition: 0.5s;
 
   text-decoration: none;
@@ -40,14 +40,14 @@
 
 #slideButton {
   cursor: pointer;
-
-  font-size: 2vh;
+  
+  font-size: 16px;
   color: @primaryColour;
 
   border: none;
   border-radius: 50px;
   background-color: @darkColour;
-  
+
   animation-name: animate-button;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -60,14 +60,26 @@
 
 @keyframes animate-button {
   0% {
-    padding: 1vw 2vw;
+    padding: 15px 30px;
   }
 
   50% {
-    padding: 1vw 4vw;
+    padding: 15px 60px;
   }
 
   100% {
-    padding: 1vw 2vw;
+    padding: 15px 30px;
+  }
+}
+
+.linkText {
+  @media (max-height: 300px) {
+    padding: 0px;
+    font-size: 16px;
+  }
+
+  @media (min-height: 300px) and (max-height: 500px) {
+    padding: 0px;
+    font-size: 20px;
   }
 }

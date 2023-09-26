@@ -20,7 +20,7 @@
 }
 .linkText {
   display: block;
-  padding: 0.5vh;
+  padding: 4px;
   transition: 0.5s;
   text-decoration: none;
   text-align: center;
@@ -37,7 +37,7 @@
 }
 #slideButton {
   cursor: pointer;
-  font-size: 2vh;
+  font-size: 16px;
   color: #2e79ba;
   border: none;
   border-radius: 50px;
@@ -52,12 +52,24 @@
 }
 @keyframes animate-button {
   0% {
-    padding: 1vw 2vw;
+    padding: 15px 30px;
   }
   50% {
-    padding: 1vw 4vw;
+    padding: 15px 60px;
   }
   100% {
-    padding: 1vw 2vw;
+    padding: 15px 30px;
+  }
+}
+@media (max-height: 300px) {
+  .linkText {
+    padding: 0px;
+    font-size: 16px;
+  }
+}
+@media (min-height: 300px) and (max-height: 500px) {
+  .linkText {
+    padding: 0px;
+    font-size: 20px;
   }
 }

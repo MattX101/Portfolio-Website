@@ -15,7 +15,15 @@
   box-sizing: border-box;
   border-style: solid;
   border-width: 4px 4px 4px 12px;
-  border-radius: 2vmin;
+  border-radius: 20px;
+  font-size: 16px;
+}
+@media (max-width: 1000px) {
+  #splitBy2,
+  #splitBy3,
+  #splitBy4 {
+    font-size: 12px;
+  }
 }
 #splitBy2:hover,
 #splitBy3:hover,

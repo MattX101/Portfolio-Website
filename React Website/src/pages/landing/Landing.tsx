@@ -10,8 +10,8 @@ function LoadPage() {
 
       <h1>Matthew Xuereb</h1>
       <h2>"I don't Hello World, I Code the World"</h2>
-      
-      <SlidePanel/>
+
+      <SlidePanel />
     </div>
   );
 }

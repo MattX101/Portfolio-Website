@@ -1,3 +1,5 @@
+@shift: 12px;
+
 // Animations
 .animationDuration {
     animation-duration: 0.2s;
@@ -11,11 +13,11 @@
 
 @keyframes hoverOnDownAnimation {
     from {
-        bottom: 1vmin;
+        bottom: @shift;
     }
 
     to {
-        bottom: 0vmin;
+        bottom: 0px;
     }
 }
 
@@ -26,11 +28,11 @@
 
 @keyframes hoverOutDownAnimation {
     from {
-        bottom: 0vmin;
+        bottom: 0px;
     }
 
     to {
-        bottom: 1vmin;
+        bottom: @shift;
     }
 }
 
@@ -46,7 +48,7 @@
     }
 
     to {
-        top: 1vmin;
+        top: @shift;
     }
 }
 
@@ -57,10 +59,10 @@
 
 @keyframes hoverOutUpAnimation {
     from {
-        top: 1vmin;
+        top: @shift;
     }
 
     to {
-        top: 0vmin;
+        top: 0px;
     }
 }

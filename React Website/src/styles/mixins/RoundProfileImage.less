@@ -1,8 +1,21 @@
 .roundProfileImage {
-    height: 40vmin;
+    height: 200px;
+    .roundProfileImageResponsive();
     pointer-events: none;
     border-style: solid;
-    border-width: 0.75rem;
+    border-width: 8px;
     border-radius: 100%;
     border-color: @darkColour;
 }
+
+.roundProfileImageResponsive {
+    @media (min-width: 500px) and (min-height: 500px) {
+      @media (orientation:portrait) {
+        height: 40vw;
+      }
+  
+      @media (orientation:landscape) {
+        height: 40vh;
+      }
+    }
+  }
