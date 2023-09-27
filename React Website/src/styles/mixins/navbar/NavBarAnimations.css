@@ -7,10 +7,10 @@
 }
 @keyframes hoverOnDownAnimation {
   from {
-    bottom: 1vmin;
+    bottom: 12px;
   }
   to {
-    bottom: 0vmin;
+    bottom: 0px;
   }
 }
 .hoverOutDownAnimation {
@@ -19,10 +19,10 @@
 }
 @keyframes hoverOutDownAnimation {
   from {
-    bottom: 0vmin;
+    bottom: 0px;
   }
   to {
-    bottom: 1vmin;
+    bottom: 12px;
   }
 }
 .hoverOnUpAnimation {
@@ -34,7 +34,7 @@
     top: 0vmin;
   }
   to {
-    top: 1vmin;
+    top: 12px;
   }
 }
 .hoverOutUpAnimation {
@@ -43,9 +43,9 @@
 }
 @keyframes hoverOutUpAnimation {
   from {
-    top: 1vmin;
+    top: 12px;
   }
   to {
-    top: 0vmin;
+    top: 0px;
   }
 }

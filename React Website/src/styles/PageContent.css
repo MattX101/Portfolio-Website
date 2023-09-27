@@ -27,6 +27,7 @@
 .contents_halfWidth hr {
   width: 75%;
   color: #081f37;
+  border-color: #081f37;
 }
 .contents_threeFourthWidth u,
 .contents_halfWidth u {
