@@ -111,6 +111,11 @@
 #tabs {
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  #tabs {
+    width: 400px;
+  }
+}
 .link {
   width: 25%;
   position: relative;
