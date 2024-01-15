@@ -8,6 +8,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 400px;
   text-align: center;
   background-color: #2e79ba;
 }
@@ -32,12 +33,6 @@
 .contents_threeFourthWidth u,
 .contents_halfWidth u {
   color: #5fc9f3;
-}
-@media (max-width: 500px) {
-  .contents_threeFourthWidth,
-  .contents_halfWidth {
-    width: 400px;
-  }
 }
 @media (min-width: 500px) and (max-width: 1500px) {
   .contents_threeFourthWidth {

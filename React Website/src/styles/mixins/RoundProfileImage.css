@@ -1,0 +1,28 @@
+.roundProfileImage {
+  height: 200px;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 100%;
+  border-color: #081f37;
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: portrait) {
+  .roundProfileImage {
+    height: 40vw;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: landscape) {
+  .roundProfileImage {
+    height: 40vh;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: portrait) {
+  .roundProfileImageResponsive {
+    height: 40vw;
+  }
+}
+@media (min-width: 500px) and (min-height: 500px) and (orientation: landscape) {
+  .roundProfileImageResponsive {
+    height: 40vh;
+  }
+}

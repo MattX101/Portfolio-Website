@@ -49,8 +49,8 @@ const AboutMeTab = () => {
                 <h3>Future Goals</h3>
 
                 <p>The development of my first game</p>
+                <p>I want to develop my on Game Engine using C++ & Vulkan</p>
                 <p>I would love to learn how to play the piano</p>
-                <p>Create my own music in a DAW software</p>
             </div>
 
             <br />

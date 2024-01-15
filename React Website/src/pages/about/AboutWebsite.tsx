@@ -36,13 +36,6 @@ function LoadPage() {
                 <p>Why mathew-xuereb.com?</p>
                 <p>Becuase matthewxuereb.com was taken.</p>
                 <br />
-
-                <hr/>
-                <br />
-
-                <h3>GitHub Link:</h3>
-                <p>https://github.com/MattX101/Portfolio-Website</p>
-                <br />
             </div>
 
             <br />
