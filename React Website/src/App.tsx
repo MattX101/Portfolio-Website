@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landing from "./pages/landing/Landing.tsx";
-import Home from "./pages/home/Home.tsx";
-import About from "./pages/about/AboutWebsite.tsx";
-import Contact from "./pages/contacts/ContactMe.tsx";
+import Landing from "./pages/Landing.tsx";
+import Home from "./pages/Home.tsx";
+import About from "./pages/AboutWebsite.tsx";
+import Contact from "./pages/ContactMe.tsx";
 import React from "react";
 
 export default function App() {

@@ -15,6 +15,9 @@
     "typescript": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
+  "overrides": {
+    "typescript": "^5.3.3"
+  },
   "scripts": {
     "start": "concurrently --kill-others \"less-watch-compiler --config less-watcher.config.json\" \"react-scripts start\"",
     "build": "react-scripts build",

@@ -1,0 +1,31 @@
+@import "../../imports/colours.less";
+@import "../../mixins/navbar/NavBarContent.less";
+@import "../../mixins/navbar/NavBarAnimations.less";
+
+#tabs {
+    overflow: hidden;
+    
+    @media (max-width: 500px) {
+        width: 400px;
+    }
+}
+
+.link {
+    .darkFourColNavBar();
+    .hoverOutUpAnimation();
+}
+
+.link:hover:not(.active) {
+    .hoveredFourColNavBar();
+    .hoverOnUpAnimation();
+    top: @shift;
+    font-weight: bold;
+}
+
+.active {
+    cursor: default;
+    background-color: @primaryColour;
+
+    top: @shift;
+    font-weight: bold;
+}

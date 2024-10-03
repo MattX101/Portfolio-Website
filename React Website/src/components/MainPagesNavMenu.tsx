@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import '../styles/MainPagesNavMenu.css';
+import '../styles/css/components/MainPagesNavMenu.css';
 
 const NavMenu = ({title, activeLink}) => {
     const navigate = useNavigate();

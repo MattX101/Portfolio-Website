@@ -1,0 +1,63 @@
+@import "../../imports/colours.less";
+
+#split {
+    overflow: hidden;
+}
+
+#splitBy2,
+#splitBy3,
+#splitBy4 {
+    float: left;
+    position: relative;
+    /*Both margin & padding affects the values of width & left*/
+    margin: 0.5%;
+    padding: 0.5%;
+
+    background-color: @secondaryColour;
+    border-color: @darkColour;
+    color: @lightColour;
+
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 4px 4px 4px 12px;
+    border-radius: 20px;
+
+    font-size: 16px;
+}
+
+#splitBy2,
+#splitBy3,
+#splitBy4 {
+    @media (max-width: 1000px) {
+        font-size: 12px;
+    }
+}
+
+#splitBy2:hover,
+#splitBy3:hover,
+#splitBy4:hover {
+
+    font-weight: bold;
+    background-color: @lightColour;
+    border-color: @darkColour;
+    color: @darkColour;
+}
+
+/*
+width: calc(40% - margin-left - margin-right - padding-left - padding-right);
+left: calc(10% + (0.5% * 2);
+*/
+#splitBy2 {
+    width: 38%;
+    left: 11%;
+}
+
+#splitBy3 {
+    width: 23%;
+    left: 14%;
+}
+
+#splitBy4 {
+    width: 18%;
+    left: 12%;
+}

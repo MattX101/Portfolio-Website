@@ -1,9 +1,9 @@
-import './style/style.css';
-import '../../styles/SplitTab.css'
+import '../styles/css/pages/aboutWebsite.css';
+import '../styles/css/components/SplitTab.css'
 import React from 'react';
-import MainPagesNavMenu from '../../components/MainPagesNavMenu.tsx'
-import reactLogo from '../../images/React Logo.png';
-import dreamHostLogo from '../../images/DreamHost Logo.png';
+import MainPagesNavMenu from '../components/MainPagesNavMenu.tsx'
+import reactLogo from '../images/React Logo.png';
+import dreamHostLogo from '../images/DreamHost Logo.png';
 
 function LoadPage() {
     return (

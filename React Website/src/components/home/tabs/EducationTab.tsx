@@ -1,4 +1,4 @@
-import '../../../styles/PageContent.css'
+import '../../../styles/css/components/PageContent.css'
 import React from 'react';
 
 const EducationTab = () => {

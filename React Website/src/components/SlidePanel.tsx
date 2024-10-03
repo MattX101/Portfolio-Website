@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import '../styles/SlidePanel.css';
+import '../styles/css/components/SlidePanel.css';
 
 const SlidePanel = () => {
     const navigate = useNavigate();
