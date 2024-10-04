@@ -1,61 +1,33 @@
-.settings {
+.lightThreeColNavBar,
+.lightFourColNavBar,
+.hoveredThreeColNavBar,
+.hoveredFourColNavBar {
   position: relative;
   cursor: pointer;
   border: none;
+  color: hsl(210, 100%, 24%);
+}
+.lightThreeColNavBar,
+.lightFourColNavBar {
+  background-color: hsl(210, 100%, 91%);
+}
+.hoveredThreeColNavBar,
+.hoveredFourColNavBar {
+  background-color: hsl(210, 75%, 71%);
+}
+.lightThreeColNavBar,
+.hoveredThreeColNavBar {
+  width: 33.3333%;
+}
+.lightFourColNavBar,
+.hoveredFourColNavBar {
+  width: 25%;
 }
 .threeColNavBar {
-  width: 33.33%;
-}
-.lightThreeColNavBar {
-  width: 33.33%;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background-color: #2e79ba;
-  color: #081f37;
-}
-.darkThreeColNavBar {
-  width: 33.33%;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background-color: #081f37;
-  color: #5fc9f3;
-}
-.hoveredThreeColNavBar {
-  width: 33.33%;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background-color: #5fc9f3;
-  color: #081f37;
+  width: 33.3333%;
 }
 .fourColNavBar {
   width: 25%;
-}
-.lightFourColNavBar {
-  width: 25%;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background-color: #2e79ba;
-  color: #081f37;
-}
-.darkFourColNavBar {
-  width: 25%;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background-color: #081f37;
-  color: #5fc9f3;
-}
-.hoveredFourColNavBar {
-  width: 25%;
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background-color: #5fc9f3;
-  color: #081f37;
 }
 .animationDuration {
   animation-duration: 0.2s;
@@ -112,28 +84,34 @@ header {
   display: block;
   padding: 50px;
   text-align: center;
-  background-color: #081f37;
+  background-color: hsl(210, 100%, 91%);
 }
 #linksRow button {
-  width: 33.33%;
   position: relative;
   cursor: pointer;
   border: none;
-  background-color: #2e79ba;
-  color: #081f37;
+  color: hsl(210, 100%, 24%);
+  background-color: hsl(210, 100%, 91%);
+  width: 33.3333%;
   animation-name: hoverOutDownAnimation;
   animation-duration: 0.2s;
   bottom: 12px;
   padding: 16px;
 }
+#linksRow .activePage {
+  pointer-events: none;
+  background-color: hsl(210, 50%, 30%);
+  color: hsl(210, 50%, 85%);
+  bottom: 0vmin;
+}
 #linksRow button:hover,
 #linksRow button:focus {
-  width: 33.33%;
   position: relative;
   cursor: pointer;
   border: none;
-  background-color: #5fc9f3;
-  color: #081f37;
+  color: hsl(210, 100%, 24%);
+  background-color: hsl(210, 75%, 71%);
+  width: 33.3333%;
   animation-name: hoverOnDownAnimation;
   animation-duration: 0.2s;
   bottom: 0px;

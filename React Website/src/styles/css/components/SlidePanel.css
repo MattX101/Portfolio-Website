@@ -11,7 +11,7 @@
   width: 0;
   top: 0;
   left: 0;
-  background-color: #081f37;
+  background-color: hsl(210, 100%, 93%);
   transition: 1s;
   display: flex;
   flex-direction: column;
@@ -25,11 +25,11 @@
   text-decoration: none;
   text-align: center;
   font-size: 3vh;
-  color: #2e79ba;
+  color: hsl(210, 100%, 20%);
 }
 .linkText :hover,
 .linkText :focus {
-  color: #5fc9f3;
+  color: hsl(210, 100%, 40%);
 }
 #closeText :hover,
 #closeText :focus {
@@ -38,17 +38,17 @@
 #slideButton {
   cursor: pointer;
   font-size: 16px;
-  color: #2e79ba;
+  color: hsl(210, 100%, 95%);
   border: none;
   border-radius: 50px;
-  background-color: #081f37;
+  background-color: hsl(210, 100%, 20%);
   animation-name: animate-button;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 #slideButton :hover,
 #slideButton :focus {
-  color: #5fc9f3;
+  color: hsl(210, 100%, 75%);
 }
 @keyframes animate-button {
   0% {

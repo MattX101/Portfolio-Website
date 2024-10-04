@@ -6,7 +6,7 @@ header {
     display: block;
     padding: 50px;
     text-align: center;
-    background-color: @darkColour;
+    background-color: @lightColourSat1Lit3;
 }
 
 #linksRow {
@@ -15,6 +15,13 @@ header {
         .hoverOutDownAnimation();
         bottom: @shift;
         padding: 16px;
+    }
+
+    .activePage {
+        pointer-events: none;
+        background-color: @darkColourSat3Lit6;
+        color: @lightColourSat3Lit6;
+        bottom: 0vmin;
     }
 
     button:hover,

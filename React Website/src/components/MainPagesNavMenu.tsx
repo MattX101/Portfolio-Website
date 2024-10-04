@@ -9,10 +9,11 @@ const NavMenu = ({title, activeLink}) => {
     useEffect(() => {
         var activeLinkElement = document.getElementById(activeLink) as HTMLElement;
         activeLinkElement.disabled = true;
-        activeLinkElement.style.pointerEvents = 'none';
-        activeLinkElement.style.backgroundColor = "#081f37";
-        activeLinkElement.style.color = "#2e79ba";
-        activeLinkElement.style.bottom = "0vmin";
+        activeLinkElement.className = "activePage";
+        /*activeLinkElement.style.pointerEvents = 'none';
+        activeLinkElement.style.backgroundColor = "#1e3a8a";
+        activeLinkElement.style.color = "#bfdbfe";
+        activeLinkElement.style.bottom = "0vmin";*/
     });
 
     return (

@@ -1,65 +1,40 @@
 @import "../../imports/colours.less";
 
-.settings {
+.lightThreeColNavBar,
+.lightFourColNavBar,
+.hoveredThreeColNavBar,
+.hoveredFourColNavBar {
     position: relative;
     cursor: pointer;
     border: none;
+
+    color: @darkColourSat1Lit3;
 }
 
-// 3 Column Nav Bar
-.threeColNavBar {
-    width: 33.33%;
+.lightThreeColNavBar,
+.lightFourColNavBar {
+    background-color: @lightColourSat1Lit3;
 }
 
-.lightThreeColNavBar {
-    .threeColNavBar();
-    .settings();
-
-    background-color: @primaryColour;
-    color: @darkColour;
+.hoveredThreeColNavBar,
+.hoveredFourColNavBar {
+    background-color: @lightHighlightColourSat2Lit3;
 }
 
-.darkThreeColNavBar {
-    .threeColNavBar();
-    .settings();
-
-    background-color: @darkColour;
-    color: @lightColour;
-}
-
+.lightThreeColNavBar,
 .hoveredThreeColNavBar {
     .threeColNavBar();
-    .settings();
-
-    background-color: @lightColour;
-    color: @darkColour;
 }
 
-// 4 Column Nav Bar
-.fourColNavBar {
-    width: 25%;
-}
-
-.lightFourColNavBar {
-    .fourColNavBar();
-    .settings();
-
-    background-color: @primaryColour;
-    color: @darkColour;
-}
-
-.darkFourColNavBar {
-    .fourColNavBar();
-    .settings();
-
-    background-color: @darkColour;
-    color: @lightColour;
-}
-
+.lightFourColNavBar,
 .hoveredFourColNavBar {
     .fourColNavBar();
-    .settings();
+}
 
-    background-color: @lightColour;
-    color: @darkColour;
+.threeColNavBar {
+    width: 33.3333%;
+}
+
+.fourColNavBar {
+    width: 25%;
 }

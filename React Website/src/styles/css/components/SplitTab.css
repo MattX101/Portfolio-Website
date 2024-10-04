@@ -9,14 +9,10 @@
   /*Both margin & padding affects the values of width & left*/
   margin: 0.5%;
   padding: 0.5%;
-  background-color: #1e549f;
-  border-color: #081f37;
-  color: #5fc9f3;
+  background-color: hsl(210, 100%, 95%);
+  color: hsl(210, 100%, 20%);
   box-sizing: border-box;
-  border-style: solid;
-  border-width: 4px 4px 4px 12px;
   border-radius: 20px;
-  font-size: 16px;
 }
 @media (max-width: 1000px) {
   #splitBy2,
@@ -29,9 +25,8 @@
 #splitBy3:hover,
 #splitBy4:hover {
   font-weight: bold;
-  background-color: #5fc9f3;
-  border-color: #081f37;
-  color: #081f37;
+  background-color: hsl(210, 50%, 75%);
+  border-color: hsl(210, 50%, 75%);
 }
 /*
 width: calc(40% - margin-left - margin-right - padding-left - padding-right);

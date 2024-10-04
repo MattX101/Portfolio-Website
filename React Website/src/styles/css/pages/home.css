@@ -4,7 +4,7 @@
   border-style: solid;
   border-width: 8px;
   border-radius: 100%;
-  border-color: #081f37;
+  border-color: hsl(210, 100%, 20%);
 }
 @media (min-width: 500px) and (min-height: 500px) and (orientation: portrait) {
   .roundProfileImage {
@@ -46,7 +46,7 @@
   border-style: solid;
   border-width: 8px;
   border-radius: 100%;
-  border-color: #081f37;
+  border-color: hsl(210, 100%, 20%);
 }
 @media (min-width: 500px) and (min-height: 500px) and (orientation: portrait) {
   #profile img {
