@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import '../styles/css/components/SlidePanel.css';
+import BtnTextLink from './elements/buttons/BtnTextLink.tsx';
 
 const SlidePanel = () => {
     const navigate = useNavigate();
@@ -15,22 +16,35 @@ const SlidePanel = () => {
 
     return (
         <>
-            <button id="slideButton" onClick={() => toggle('100')}>
-                <b>Continue</b>
-            </button>
+            <BtnTextLink
+                className='slideButton'
+                text='Continue'
+                onClick={() => toggle('100')} />
 
             <div id="slideOverlay" className="overlay">
                 <div className="overlay-content">
                     <br />
 
-                    <p className="linkText" onClick={() => navigate('/home')}><b>Home</b></p>
-                    <p className="linkText" onClick={() => navigate('/about')}><b>About Website</b></p>
-                    <p className="linkText" onClick={() => navigate("/contact")}><b>Contact Me</b></p>
+                    <BtnTextLink
+                        className='linkText'
+                        text='Home'
+                        onClick={() => navigate('/home')} />
+                    <BtnTextLink
+                        className='linkText'
+                        text='About Website'
+                        onClick={() => navigate('/about')} />
+                    <BtnTextLink
+                        className='linkText'
+                        text='Contact Me'
+                        onClick={() => navigate('/contact')} />
 
                     <br />
                     <br />
 
-                    <p className="linkText" id="closeText" onClick={() => toggle('0')}><b>Close</b></p>
+                    <BtnTextLink
+                        className='linkText closeText'
+                        text='Close'
+                        onClick={() => toggle('0')} />
 
                     <br />
                 </div>

@@ -8,13 +8,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-h1 {
-  color: hsl(210, 100%, 20%);
-}
-h2,
-h3 {
-  color: hsl(210, 100%, 40%);
-}
 hr {
   width: 75%;
   color: hsl(210, 100%, 20%);
@@ -22,4 +15,40 @@ hr {
 }
 u {
   color: hsl(210, 100%, 40%);
+}
+#TxtHeaderXL,
+#TxtHeader,
+#TxtSubHeader,
+#TxtBaseXL {
+  font-weight: bold;
+}
+#TxtHeaderXL,
+#TxtHeader {
+  color: hsl(210, 100%, 20%);
+}
+#TxtSubHeader,
+#TxtBaseXL {
+  color: hsl(210, 100%, 40%);
+}
+#TxtBase,
+#TxtBaseS {
+  color: hsl(210, 50%, 30%);
+}
+#TxtHeaderXL {
+  font-size: 2.5rem;
+}
+#TxtHeader {
+  font-size: 2rem;
+}
+#TxtSubHeader {
+  font-size: 1.5rem;
+}
+#TxtBaseXL {
+  font-size: 1.25rem;
+}
+#TxtBase {
+  font-size: 1rem;
+}
+#TxtBaseS {
+  font-size: 0.75rem;
 }

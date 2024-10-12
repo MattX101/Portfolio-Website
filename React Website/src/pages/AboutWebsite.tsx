@@ -4,6 +4,9 @@ import React from 'react';
 import MainPagesNavMenu from '../components/MainPagesNavMenu.tsx'
 import reactLogo from '../images/React Logo.png';
 import dreamHostLogo from '../images/DreamHost Logo.png';
+import TxtBase from '../components/elements/text/TxtBase.tsx';
+import LineBreak from '../components/elements/LineBreak.tsx';
+import Image from '../components/elements/Image.tsx';
 
 function LoadPage() {
     return (
@@ -15,26 +18,31 @@ function LoadPage() {
             <div className="contents_halfWidth">
                 <br />
 
-                <p>Powered by the <b>React</b> Framework</p>
-                <img src={reactLogo} className="logoBig" alt="logo" />
-                <br /> <br />
+                <TxtBase>Powered by the <b>React</b> Framework</TxtBase>
+                <br />
+
+                <Image path={reactLogo} name='logoBig' />
+                <br /><br />
 
                 <div id="split">
-                    <p id="splitBy2"><b>TypeScript</b> utilsed</p>
-                    <p id="splitBy2">Styled by <b>LESS</b></p>
+                    <div id="splitBy2">
+                        <TxtBase><b>TypeScript</b> utilsed</TxtBase>
+                    </div>
+                    <div id="splitBy2">
+                        <TxtBase>Styled by <b>LESS</b></TxtBase>
+                    </div>
                 </div>
+
+                <LineBreak />
+
+                <TxtBase><b>Hosted</b> on DreamHost</TxtBase>
                 <br />
 
-                <br />
-                <hr/>
-                <br />
+                <Image path={dreamHostLogo} name='logoSmall' />
+                <br /><br />
 
-                <p><b>Hosted</b> on DreamHost</p>
-                <img src={dreamHostLogo} className="logoSmall" alt="logo" />
-                <br/><br/>
-
-                <p>Why mathew-xuereb.com?</p>
-                <p>Becuase matthewxuereb.com was taken.</p>
+                <TxtBase>Why mathew-xuereb.com?</TxtBase>
+                <TxtBase>Becuase matthewxuereb.com was taken.</TxtBase>
                 <br />
             </div>
 

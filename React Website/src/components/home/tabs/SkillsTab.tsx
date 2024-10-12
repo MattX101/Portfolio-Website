@@ -1,157 +1,189 @@
 import '../../../styles/css/components/PageContent.css'
 import React from 'react';
+import TxtSubHeader from '../../../components/elements/text/TxtSubHeader.tsx';
+import TxtBaseXL from '../../../components/elements/text/TxtBaseXL.tsx';
+import SecondSplit from '../../elements/splitTabs/SecondSplit.tsx';
+import ThridSplit from '../../elements/splitTabs/ThirdSplit.tsx';
+import FourthSplit from '../../elements/splitTabs/FourthSplit.tsx';
 
 const SkillsTab = () => {
     return (
         <div className="contents_threeFourthWidth" id="skillsTab">
+            <br /><br />
+
+            <TxtSubHeader>Skills</TxtSubHeader>
+
+            <br />
+            <TxtBaseXL>Web Development</TxtBaseXL>
             <br />
 
-            <h2>Skills</h2>
+            <ThridSplit
+                a='HTML5'
+                b='CSS'
+                c='JavaScript'
+            />
+            <SecondSplit
+                a='Bootstrap'
+                b='Asp.net'
+            />
+            <SecondSplit
+                a='Front End Developer'
+                b='Single Page Applications'
+            />
+            <ThridSplit
+                a='Less'
+                b='Sass/Scss'
+                c='Wordpress'
+            />
+
+            <br />
+            <TxtBaseXL>JavaScript</TxtBaseXL>
             <br />
 
-            <h3>Web Development</h3>
-            <div id="split">
-                <p id="splitBy3">HTML5</p>
-                <p id="splitBy3">CSS</p>
-                <p id="splitBy3">JavaScript</p>
-            </div>
-            <div id="split">
-                <p id="splitBy2">Bootstrap</p>
-                <p id="splitBy2">Asp.net</p>
-            </div>
-            <div id="split">
-                <p id="splitBy2">Front End Developer</p>
-                <p id="splitBy2">Single Page Applications</p>
-            </div>
-            <div id="split">
-                <p id="splitBy3">Less</p>
-                <p id="splitBy3">Sass/Scss </p>
-                <p id="splitBy3">Wordpress</p>
-            </div>
+            <ThridSplit
+                a='JavaScript'
+                b='TypeScript'
+                c='JQuery'
+            />
+            <SecondSplit
+                a='Node.js'
+                b='NPM'
+            />
+            <ThridSplit
+                a='React'
+                b='Vue'
+                c='Angular'
+            />
+
+            <br />
+            <TxtBaseXL>SQL</TxtBaseXL>
             <br />
 
-            <h3>JavaScript</h3>
-            <div id="split">
-                <p id="splitBy3">JavaScript</p>
-                <p id="splitBy3">TypeScript</p>
-                <p id="splitBy3">JQuery</p>
-            </div>
-            <div id="split">
-                <p id="splitBy2">Node.js</p>
-                <p id="splitBy2">NPM</p>
-            </div>
-            <div id="split">
-                <p id="splitBy3">React</p>
-                <p id="splitBy3">Vue</p>
-                <p id="splitBy3">Angular</p>
-            </div>
+            <ThridSplit
+                a='SQL'
+                b='MySQL'
+                c='NoSQL'
+            />
+
+            <br />
+            <TxtBaseXL>GIT</TxtBaseXL>
             <br />
 
-            <h3>SQL</h3>
-            <div id="split">
-                <p id="splitBy3">SQL</p>
-                <p id="splitBy3">MySQL</p>
-                <p id="splitBy3">NoSQL</p>
-            </div>
+            <SecondSplit
+                a='Git'
+                b='Github'
+            />
+
+            <br />
+            <TxtBaseXL>Coding</TxtBaseXL>
             <br />
 
-            <h3>GIT</h3>
-            <div id="split">
-                <p id="splitBy2">Git</p>
-                <p id="splitBy2">Github</p>
-            </div>
+            <ThridSplit
+                a='C++'
+                b='C#'
+                c='Java'
+            />
+            <SecondSplit
+                a='Python'
+                b='JSON'
+            />
+            <SecondSplit
+                a='JavaScript'
+                b='TypeScript'
+            />
+            <ThridSplit
+                a='OpenGL'
+                b='PHP'
+                c='Laravel'
+            />
+
+            <br />
+            <TxtBaseXL>Game Development</TxtBaseXL>
             <br />
 
-            <h3>Coding</h3>
-            <div id="split">
-                <p id="splitBy3">C++</p>
-                <p id="splitBy3">C#</p>
-                <p id="splitBy3">Java</p>
-            </div>
-            <div id="split">
-                <p id="splitBy2">Python</p>
-                <p id="splitBy2">JSON</p>
-            </div>
-            <div id="split">
-                <p id="splitBy2">JavaScript</p>
-                <p id="splitBy2">TypeScript</p>
-            </div>
-            <div id="split">
-                <p id="splitBy3">OpenGL</p>
-                <p id="splitBy3">PHP</p>
-                <p id="splitBy3">Laravel</p>
-            </div>
+            <ThridSplit
+                a='Unity'
+                b='UE5'
+                c='Godot'
+            />
+            <ThridSplit
+                a='C# in Unity'
+                b='C++ in UE5'
+                c='Blender 3D'
+            />
+
+            <br />
+            <TxtBaseXL>Software Developemnt</TxtBaseXL>
             <br />
 
-            <h3>Game Development</h3>
-            <div id="split">
-                <p id="splitBy3">Unity</p>
-                <p id="splitBy3">UE5</p>
-                <p id="splitBy3">Godot</p>
-            </div>
-            <div id="split">
-                <p id="splitBy3">C# in Unity</p>
-                <p id="splitBy3">C++ in UE5</p>
-                <p id="splitBy3">Blender 3D</p>
-            </div>
+            <ThridSplit
+                a='RayLib5'
+                b='LWJGL'
+                c='GLFW'
+            />
+
+            <br />
+            <TxtBaseXL>IDE</TxtBaseXL>
             <br />
 
-            <h3>Software Developemnt</h3>
-            <div id="split">
-                <p id="splitBy3">RayLib5</p>
-                <p id="splitBy3">LWJGL</p>
-                <p id="splitBy3">GLFW</p>
-            </div>
+            <SecondSplit
+                a='VS Community'
+                b='VS Code'
+            />
+            <ThridSplit
+                a='Jetbrains Rider'
+                b='Jetbrains Intellij Idea'
+                c='Eclipse'
+            />
+
+            <br />
+            <TxtBaseXL>Operating Systems</TxtBaseXL>
             <br />
 
-            <h3>IDE</h3>
-            <div id="split">
-                <p id="splitBy2">VS Community</p>
-                <p id="splitBy2">VS Code</p>
-            </div>
-            <div id="split">
-                <p id="splitBy3">Jetbrains Rider</p>
-                <p id="splitBy3">Jetbrains Intellij Idea </p>
-                <p id="splitBy3">Eclipse</p>
-            </div>
+            <SecondSplit
+                a='Linux'
+                b='Windows'
+            />
+
+            <br />
+            <TxtBaseXL>Adobe</TxtBaseXL>
             <br />
 
-            <h3>Operating Systems</h3>
-            <div id="split">
-                <p id="splitBy2">Linux</p>
-                <p id="splitBy2">Windows</p>
-            </div>
+            <FourthSplit
+                a='Photoshop'
+                b='Illustrator'
+                c='XD'
+                d='After Effects'
+            />
+
+            <br />
+            <TxtBaseXL>Affinty</TxtBaseXL>
             <br />
 
-            <h3>Adobe</h3>
-            <div id="split">
-                <p id="splitBy4">Photoshop</p>
-                <p id="splitBy4">Illustrator</p>
-                <p id="splitBy4">XD</p>
-                <p id="splitBy4">After Effects</p>
-            </div>
+            <SecondSplit
+                a='Photo'
+                b='Designer'
+            />
+
+            <br />
+            <TxtBaseXL>Music</TxtBaseXL>
             <br />
 
-            <h3>Affinty</h3>
-            <div id="split">
-                <p id="splitBy2">Photo</p>
-                <p id="splitBy2">Designer</p>
-            </div>
+            <SecondSplit
+                a='Ableton Live'
+                b='Audacity'
+            />
+
+            <br />
+            <TxtBaseXL>Microsoft</TxtBaseXL>
             <br />
 
-            <h3>Music</h3>
-            <div id="split">
-                <p id="splitBy2">Ableton Live 10</p>
-                <p id="splitBy2">Audacity</p>
-            </div>
-            <br />
+            <ThridSplit
+                a='Word'
+                b='Powerpoint'
+                c='Excel'
+            />
 
-            <h3>Microsoft</h3>
-            <div id="split">
-                <p id="splitBy3">Word</p>
-                <p id="splitBy3">Powerpoint</p>
-                <p id="splitBy3">Excel</p>
-            </div>
             <br />
         </div>
     )

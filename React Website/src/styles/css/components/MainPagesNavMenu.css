@@ -38,7 +38,7 @@
 }
 @keyframes hoverOnDownAnimation {
   from {
-    bottom: 12px;
+    bottom: 0.75rem;
   }
   to {
     bottom: 0px;
@@ -53,7 +53,7 @@
     bottom: 0px;
   }
   to {
-    bottom: 12px;
+    bottom: 0.75rem;
   }
 }
 .hoverOnUpAnimation {
@@ -65,7 +65,7 @@
     top: 0vmin;
   }
   to {
-    top: 12px;
+    top: 0.75rem;
   }
 }
 .hoverOutUpAnimation {
@@ -74,7 +74,7 @@
 }
 @keyframes hoverOutUpAnimation {
   from {
-    top: 12px;
+    top: 0.75rem;
   }
   to {
     top: 0px;
@@ -95,7 +95,7 @@ header {
   width: 33.3333%;
   animation-name: hoverOutDownAnimation;
   animation-duration: 0.2s;
-  bottom: 12px;
+  bottom: 0.75rem;
   padding: 16px;
 }
 #linksRow .activePage {
@@ -103,6 +103,11 @@ header {
   background-color: hsl(210, 50%, 30%);
   color: hsl(210, 50%, 85%);
   bottom: 0vmin;
+}
+#linksRow .activePage #TxtBase {
+  cursor: default;
+  color: hsl(210, 50%, 85%);
+  font-weight: bold;
 }
 #linksRow button:hover,
 #linksRow button:focus {

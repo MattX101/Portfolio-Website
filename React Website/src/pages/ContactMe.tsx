@@ -1,5 +1,8 @@
 import React from 'react';
 import MainPagesNavMenu from '../components/MainPagesNavMenu.tsx'
+import TxtSubHeader from '../components/elements/text/TxtSubHeader.tsx';
+import TxtBaseXL from '../components/elements/text/TxtBaseXL.tsx';
+import TxtBase from '../components/elements/text/TxtBase.tsx';
 
 function LoadPage() {
     return (
@@ -11,17 +14,17 @@ function LoadPage() {
             <div className="contents_halfWidth" id="contactTab">
                 <br />
 
-                <h2>
+                <TxtSubHeader>
                     <u>Contact Details</u>
-                </h2>
+                </TxtSubHeader>
                 <br />
 
-                <h3>Email</h3>
-                <p>matthew.xuereb@protonmail.com</p>
+                <TxtBaseXL>Email</TxtBaseXL>
+                <TxtBase>matthew.xuereb@protonmail.com</TxtBase>
                 <br />
 
-                <h3>Phone</h3>
-                <p>356 7931 6589</p>
+                <TxtBaseXL>Phone</TxtBaseXL>
+                <TxtBase>356 7931 6589</TxtBase>
                 <br />
             </div>
 

@@ -23,6 +23,9 @@
   text-align: center;
   font-size: 3vh;
   color: @darkColourSat1Lit1;
+}
+
+.linkText {
 
   :hover,
   :focus {
@@ -30,7 +33,7 @@
   }
 }
 
-#closeText {
+.closeText {
 
   :hover,
   :focus {
@@ -38,9 +41,9 @@
   }
 }
 
-#slideButton {
+#slideButton, .slideButton {
   cursor: pointer;
-  
+
   font-size: 16px;
   color: @lightColourSat1Lit1;
 
@@ -72,7 +75,8 @@
   }
 }
 
-.linkText {
+.linkText,
+.closeText {
   @media (max-height: 300px) {
     padding: 0px;
     font-size: 16px;

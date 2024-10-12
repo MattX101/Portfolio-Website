@@ -38,7 +38,7 @@
 }
 @keyframes hoverOnDownAnimation {
   from {
-    bottom: 12px;
+    bottom: 0.75rem;
   }
   to {
     bottom: 0px;
@@ -53,7 +53,7 @@
     bottom: 0px;
   }
   to {
-    bottom: 12px;
+    bottom: 0.75rem;
   }
 }
 .hoverOnUpAnimation {
@@ -65,7 +65,7 @@
     top: 0vmin;
   }
   to {
-    top: 12px;
+    top: 0.75rem;
   }
 }
 .hoverOutUpAnimation {
@@ -74,14 +74,11 @@
 }
 @keyframes hoverOutUpAnimation {
   from {
-    top: 12px;
+    top: 0.75rem;
   }
   to {
     top: 0px;
   }
-}
-#tabs {
-  overflow: hidden;
 }
 @media (max-width: 500px) {
   #tabs {
@@ -107,13 +104,15 @@
   width: 25%;
   animation-name: hoverOnUpAnimation;
   animation-duration: 0.2s;
-  top: 12px;
+  top: 0.75rem;
   font-weight: bold;
 }
 .active {
-  cursor: default;
   background-color: hsl(210, 50%, 30%);
+  top: 0.75rem;
+}
+.active #TxtBase {
+  cursor: default;
   color: hsl(210, 50%, 85%);
-  top: 12px;
   font-weight: bold;
 }

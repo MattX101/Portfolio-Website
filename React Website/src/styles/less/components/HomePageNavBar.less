@@ -3,8 +3,6 @@
 @import "../../mixins/navbar/NavBarAnimations.less";
 
 #tabs {
-    overflow: hidden;
-    
     @media (max-width: 500px) {
         width: 400px;
     }
@@ -23,10 +21,12 @@
 }
 
 .active {
-    cursor: default;
     background-color: @darkColourSat3Lit6;
-    color: @lightColourSat3Lit6;
-
     top: @shift;
+}
+
+.active #TxtBase {
+    cursor: default;
+    color: @lightColourSat3Lit6;
     font-weight: bold;
 }

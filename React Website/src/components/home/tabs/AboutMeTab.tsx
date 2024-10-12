@@ -1,56 +1,65 @@
 import '../../../styles/css/components/PageContent.css'
 import React from 'react';
 import profilePic from '../../../images/Profile Pic.png';
+import TxtSubHeader from '../../../components/elements/text/TxtSubHeader.tsx';
+import TxtBaseXL from '../../../components/elements/text/TxtBaseXL.tsx';
+import TxtBase from '../../../components/elements/text/TxtBase.tsx';
+import LineBreak from '../../elements/LineBreak.tsx'
+import Image from '../../elements/Image.tsx';
 
 const AboutMeTab = () => {
     return (
         <div className="contents_threeFourthWidth" id="aboutTab">
-            <br />
+            <br /><br />
 
             <div id="profile">
-                <img src={profilePic} alt="logo" />
+                <Image path={profilePic} name=''/>
 
-                <h2>
+                <br /><br />
+
+                <TxtSubHeader>
                     <u>Matthew Xuereb</u>
-                </h2>
+                </TxtSubHeader>
 
-                <p>Motto - <b>“I don't Hello World, I Code the World”</b></p>
+                <TxtBase>Motto - <b>“I don't Hello World, I Code the World”</b></TxtBase>
 
                 <br />
             </div>
 
-            <hr />
+            <LineBreak />
 
             <div id="profile">
+                <TxtBaseXL>Hobbies</TxtBaseXL>
                 <br />
-                <h3>Hobbies</h3>
 
-                <p>
+                <TxtBase>
                     Ever since I entered the world of coding I have been constantly amazed with the projects people share on the internet.
                     It had inspired me to set out in my own <u>coding adventures</u> in my free time.
-                </p>
-                <p>The origin of my motto came to be through my interest in <u>Procedural Content Generation</u> as it allows the generation of unique and intersting content</p>
-                <p>To further add on my interest in procedural generation, the chosen topic of my <u>dissertation</u> was about the generation of realistic virtual terrains.</p>
+                </TxtBase>
+                <TxtBase>The origin of my motto came to be through my interest in <u>Procedural Content Generation</u> as it allows the generation of unique and intersting content</TxtBase>
+                <TxtBase>To further add on my interest in procedural generation, the chosen topic of my <u>dissertation</u> was about the generation of realistic virtual terrains.</TxtBase>
 
                 <br />
 
-                <p>
-                    Outside of coding I also enjoy <u>Drawing & Sketching</u> ever since a young age. 
+                <TxtBase>
+                    Outside of coding I also enjoy <u>Drawing & Sketching</u> ever since a young age.
                     Along with drawing, I also enjoy playing <u>Video Games</u> and exploring the unique worlds the developers create.
-                    </p>
+                </TxtBase>
 
                 <br />
-                <h3>Values</h3>
+                <TxtBaseXL>Values</TxtBaseXL>
+                <br />
 
-                <p>A proper <u>Work-Life balance</u> in order to maintain a healthy lifestyle and avoid burn-out.</p>
-                <p>I desire to keep things <u>professional</u> during work as not introduce any unnecessary problems and maintain a healthy relationship with my fellow coworkers.</p>
+                <TxtBase>A proper <u>Work-Life balance</u> in order to maintain a healthy lifestyle and avoid burn-out.</TxtBase>
+                <TxtBase>I desire to keep things <u>professional</u> during work as not introduce any unnecessary problems and maintain a healthy relationship with my fellow coworkers.</TxtBase>
 
                 <br />
-                <h3>Future Goals</h3>
+                <TxtBaseXL>Future Goals</TxtBaseXL>
+                <br />
 
-                <p>The development of my first game</p>
-                <p>I want to develop my on Game Engine using C++ & Vulkan</p>
-                <p>I would love to learn how to play the piano</p>
+                <TxtBase>The development of my first game</TxtBase>
+                <TxtBase>I want to develop my on Game Engine using C++ & Vulkan</TxtBase>
+                <TxtBase>I would love to learn how to play the piano</TxtBase>
             </div>
 
             <br />

@@ -1,20 +1,24 @@
 import '../../../styles/css/components/PageContent.css'
 import React from 'react';
+import TxtSubHeader from '../../../components/elements/text/TxtSubHeader.tsx';
+import TxtBaseXL from '../../../components/elements/text/TxtBaseXL.tsx';
+import TxtBase from '../../../components/elements/text/TxtBase.tsx';
+import LineBreak from '../../elements/LineBreak.tsx'
 
 const WorkTab = () => {
     return (
         <div className="contents_threeFourthWidth" id="workTab">
+            <br /><br />
+
+            <TxtSubHeader>Work Experience</TxtSubHeader>
             <br />
 
-            <h2>Work Experience</h2>
-            <br />
+            <LineBreak />
 
-            <hr />
-
-            <h3>Apprentice</h3>
-            <p>Malta Police Force</p>
-            <p>September 2022 - June 2023</p>
-            <hr />
+            <TxtBaseXL>Apprentice</TxtBaseXL>
+            <TxtBase>Malta Police Force</TxtBase>
+            <TxtBase>September 2022 - June 2023</TxtBase>
+            <LineBreak />
 
             <br />
         </div>

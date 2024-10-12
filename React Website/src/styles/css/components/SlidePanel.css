@@ -31,11 +31,12 @@
 .linkText :focus {
   color: hsl(210, 100%, 40%);
 }
-#closeText :hover,
-#closeText :focus {
+.closeText :hover,
+.closeText :focus {
   color: red;
 }
-#slideButton {
+#slideButton,
+.slideButton {
   cursor: pointer;
   font-size: 16px;
   color: hsl(210, 100%, 95%);
@@ -47,7 +48,9 @@
   animation-iteration-count: infinite;
 }
 #slideButton :hover,
-#slideButton :focus {
+.slideButton :hover,
+#slideButton :focus,
+.slideButton :focus {
   color: hsl(210, 100%, 75%);
 }
 @keyframes animate-button {
@@ -62,13 +65,15 @@
   }
 }
 @media (max-height: 300px) {
-  .linkText {
+  .linkText,
+  .closeText {
     padding: 0px;
     font-size: 16px;
   }
 }
 @media (min-height: 300px) and (max-height: 500px) {
-  .linkText {
+  .linkText,
+  .closeText {
     padding: 0px;
     font-size: 20px;
   }

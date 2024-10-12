@@ -1,34 +1,57 @@
 import React, { useState } from 'react';
 import TabsManager from './TabsManager.tsx';
+import BtnButton from '../elements/buttons/BtnButton.tsx';
+
+const aboutMeIndex = 1;
+const educationIndex = 2;
+const workIndex = 3;
+const skillsIndex = 4;
+
+var activeTab = aboutMeIndex;
 
 const HomePageNavBar = () => {
-    const [showAddTask, setShowAddTask] = useState(1)
+    const [showAddTask, setShowAddTask] = useState(aboutMeIndex)
 
-    function switchTab(clickedTab, num) {
-        setShowAddTask(num);
+    function switchTab(index: number) {
+        setShowAddTask(index);
 
-        var currentActiveTab = document.getElementsByClassName('link active')[0] as HTMLElement;
-        currentActiveTab.className = 'link';
+        activeTab = index;
+    }
 
-        var newActiveTab = document.getElementById(clickedTab) as HTMLElement;
-        newActiveTab.className = 'link active';
+    function isTabActive(tab: number) {
+        return tab === activeTab ? true : false;
+    }
+
+    function getTabClassName(tab: number) {
+        return isTabActive(tab) ? "link active" : "link";;
     }
 
     return (
         <>
             <div id="tabs">
-                <button className="link active" id="aboutMeButton" onClick={() => switchTab('aboutMeButton', 1)}>
-                    <p>About Me</p>
-                </button>
-                <button className="link" id="educationButton" onClick={() => switchTab('educationButton', 2)}>
-                    <p>Education</p>
-                </button>
-                <button className="link" id="workButton" onClick={() => switchTab('workButton', 3)}>
-                    <p>Work</p>
-                </button>
-                <button className="link" id="skillsButton" onClick={() => switchTab('skillsButton', 4)}>
-                    <p>Skills</p>
-                </button>
+                <BtnButton
+                    text='About Me'
+                    id={null}
+                    className={getTabClassName(aboutMeIndex)}
+                    onAction={() => switchTab(aboutMeIndex)} />
+
+                <BtnButton
+                    text='Education'
+                    id={null}
+                    className={getTabClassName(educationIndex)}
+                    onAction={() => switchTab(educationIndex)} />
+
+                <BtnButton
+                    text='Work'
+                    id={null}
+                    className={getTabClassName(workIndex)}
+                    onAction={() => switchTab(workIndex)} />
+
+                <BtnButton
+                    text='Skills'
+                    id={null}
+                    className={getTabClassName(skillsIndex)}
+                    onAction={() => switchTab(skillsIndex)} />
 
                 <br />
             </div>
