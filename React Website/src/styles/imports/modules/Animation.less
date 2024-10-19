@@ -1,0 +1,57 @@
+@keyframes animate-button {
+    0% {
+        padding: 15px 30px;
+    }
+
+    50% {
+        padding: 15px 60px;
+    }
+
+    100% {
+        padding: 15px 30px;
+    }
+}
+
+@shift: 0.75rem;
+
+// Down
+@keyframes hoverOnDownAnimation {
+    from {
+        bottom: @shift;
+    }
+
+    to {
+        bottom: 0px;
+    }
+}
+
+@keyframes hoverOutDownAnimation {
+    from {
+        bottom: 0px;
+    }
+
+    to {
+        bottom: @shift;
+    }
+}
+
+// Up
+@keyframes hoverOnUpAnimation {
+    from {
+        top: 0vmin;
+    }
+
+    to {
+        top: @shift;
+    }
+}
+
+@keyframes hoverOutUpAnimation {
+    from {
+        top: @shift;
+    }
+
+    to {
+        top: 0px;
+    }
+}

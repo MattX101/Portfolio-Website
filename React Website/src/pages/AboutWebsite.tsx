@@ -1,5 +1,3 @@
-import '../styles/css/pages/aboutWebsite.css';
-import '../styles/css/components/SplitTab.css'
 import React from 'react';
 import MainPagesNavMenu from '../components/MainPagesNavMenu.tsx'
 import reactLogo from '../images/React Logo.png';

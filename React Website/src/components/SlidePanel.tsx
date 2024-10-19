@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import '../styles/css/components/SlidePanel.css';
 import BtnTextLink from './elements/buttons/BtnTextLink.tsx';
 
 const SlidePanel = () => {

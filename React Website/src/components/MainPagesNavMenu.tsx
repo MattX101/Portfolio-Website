@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import TxtHeader from '../components/elements/text/TxtHeader.tsx';
 import BtnButton from '../components/elements/buttons/BtnButton.tsx';
-import '../styles/css/components/MainPagesNavMenu.css';
 
 const NavMenu = ({ title, activeLink }) => {
     const navigate = useNavigate();

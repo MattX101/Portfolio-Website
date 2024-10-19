@@ -1,4 +1,3 @@
-import '../../../styles/css/components/PageContent.css'
 import React from 'react';
 import profilePic from '../../../images/Profile Pic.png';
 import TxtSubHeader from '../../../components/elements/text/TxtSubHeader.tsx';

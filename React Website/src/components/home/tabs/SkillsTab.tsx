@@ -1,4 +1,3 @@
-import '../../../styles/css/components/PageContent.css'
 import React from 'react';
 import TxtSubHeader from '../../../components/elements/text/TxtSubHeader.tsx';
 import TxtBaseXL from '../../../components/elements/text/TxtBaseXL.tsx';

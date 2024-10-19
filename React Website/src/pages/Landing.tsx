@@ -1,4 +1,3 @@
-import '../styles/css/pages/landingPage.css'
 import TxtHeader from '../components/elements/text/TxtHeader.tsx';
 import TxtSubHeader from '../components/elements/text/TxtSubHeader.tsx';
 import SlidePanel from '../components/SlidePanel.tsx';
