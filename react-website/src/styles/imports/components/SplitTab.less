@@ -1,0 +1,35 @@
+#skillsRow {
+    overflow: hidden;
+}
+
+#skillsSplitBy2,
+#skillsSplitBy3,
+#skillsSplitBy4 {
+    float: left;
+    position: relative;
+    /*Both margin & padding affects the values of width & left*/
+    margin: 0.5%;
+    padding: 0.5%;
+
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/*
+width: calc(40% - margin-left - margin-right - padding-left - padding-right);
+left: calc(10% + (0.5% * 2);
+*/
+#skillsSplitBy2 {
+    width: 38%;
+    left: 11%;
+}
+
+#skillsSplitBy3 {
+    width: 23%;
+    left: 14%;
+}
+
+#skillsSplitBy4 {
+    width: 18%;
+    left: 12%;
+}
