@@ -2,7 +2,7 @@ import React from 'react';
 
 const TxtBaseXL = ({ children }) => {
     return (
-        <div id='txtBaseXL'>
+        <div className='text-primary-darkHighlight-s1l1 text-lg font-bold'>
             {children}
         </div>
     );

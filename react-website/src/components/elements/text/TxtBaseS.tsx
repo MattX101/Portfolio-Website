@@ -2,7 +2,7 @@ import React from 'react';
 
 const TxtBaseS = ({ children }) => {
     return (
-        <div id='txtBaseS'>
+        <div className='text-primary-dark-s3l6 text-sm'>
             {children}
         </div>
     );

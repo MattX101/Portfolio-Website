@@ -1,48 +1,47 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import BtnTextLink from './elements/buttons/BtnTextLink.tsx';
+import BtnPageLink from './elements/buttons/textLink/BtnPageLink.tsx';
+import BtnClosePageLink from './elements/buttons/textLink/BtnClosePageLink.tsx';
+import BtnSlidingToggle from './elements/buttons/textLink/BtnSlidingToggle.tsx';
+
+const closedPanel = 'animate-slideOverlay_Close bg-primary-light-s1l2 fixed overflow-hidden h-full w-0 top-0 left-0 flex flex-col items-center justify-center'
+const openedPanel = 'animate-slideOverlay_Open bg-primary-light-s1l2 fixed overflow-hidden h-full w-full top-0 left-0 flex flex-col items-center justify-center'
 
 const SlidePanel = () => {
     const navigate = useNavigate();
 
-    function toggle(value: number) {
-        (document.getElementById("slidePanelOverlay") as HTMLElement).style.width = `${value}%`;
+    function openOverlay() {
+        (document.getElementById("sldPanelOverlay") as HTMLElement).className = openedPanel;
+    }
 
-        var links = document.getElementsByClassName("txtPageLink");
-        for (var i = 0, length = links.length; i < length; i++)
-            links[i].style.opacity = `${value}%`;
+    function closeOverlay() {
+        (document.getElementById("sldPanelOverlay") as HTMLElement).className = closedPanel;
     }
 
     return (
         <>
-            <BtnTextLink
-                className='btnSlidingToggle'
+            <BtnSlidingToggle
                 text='Continue'
-                onClick={() => toggle('100')} />
+                onClick={() => openOverlay()} />
 
-            <div id="slidePanelOverlay">
+            <div id="sldPanelOverlay" className={closedPanel}>
                 <br />
 
-                <BtnTextLink
-                    className='txtPageLink'
+                <BtnPageLink
                     text='Home'
                     onClick={() => navigate('/home')} />
-                <BtnTextLink
-                    className='txtPageLink'
+                <BtnPageLink
                     text='About Website'
                     onClick={() => navigate('/about')} />
-                <BtnTextLink
-                    className='txtPageLink'
+                <BtnPageLink
                     text='Contact Me'
                     onClick={() => navigate('/contact')} />
 
-                <br />
-                <br />
+                <div className='my-8' />
 
-                <BtnTextLink
-                    className='txtPageLink txtCloseLink'
+                <BtnClosePageLink
                     text='Close'
-                    onClick={() => toggle('0')} />
+                    onClick={() => closeOverlay()} />
 
                 <br />
             </div>

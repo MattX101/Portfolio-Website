@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PageSection from '../../components/PageSection.tsx';
 import TabsManager from './TabsManager.tsx';
 import BtnButton from '../elements/buttons/BtnButton.tsx';
 
@@ -23,40 +24,46 @@ const HomePageNavBar = () => {
     }
 
     function getTabClassName(tab: number) {
-        return isTabActive(tab) ? "homePageNavBarLink homePageNavBarActiveLink" : "homePageNavBarLink";
+        return isTabActive(tab) ?
+            'h-10 relative top-2 bg-primary-light-s1l3 font-bold underline pointer-events-none' : // Active Tab
+            'h-12 top-0 hover:h-10 hover:top-2 animate-homePageNavBar_OnHoverExit hover:animate-homePageNavBar_OnHoverEnter bg-primary-light-s1l5 hover:bg-primary-light-s1l6 hover:underline relative'; // Inactive Tab
     }
 
     return (
         <>
-            <div id="homePageNavBar">
-                <BtnButton
-                    text='About Me'
-                    id={null}
-                    className={getTabClassName(AboutMeIndex)}
-                    onAction={() => switchTab(AboutMeIndex)} />
+            <PageSection>
+                <div className='grid grid-cols-4 grid-rows-1 text-center'>
+                    <BtnButton
+                        text='About Me'
+                        id={null}
+                        className={getTabClassName(AboutMeIndex)}
+                        onAction={() => switchTab(AboutMeIndex)} />
 
-                <BtnButton
-                    text='Education'
-                    id={null}
-                    className={getTabClassName(EducationIndex)}
-                    onAction={() => switchTab(EducationIndex)} />
+                    <BtnButton
+                        text='Education'
+                        id={null}
+                        className={getTabClassName(EducationIndex)}
+                        onAction={() => switchTab(EducationIndex)} />
 
-                <BtnButton
-                    text='Work'
-                    id={null}
-                    className={getTabClassName(WorkIndex)}
-                    onAction={() => switchTab(WorkIndex)} />
+                    <BtnButton
+                        text='Work'
+                        id={null}
+                        className={getTabClassName(WorkIndex)}
+                        onAction={() => switchTab(WorkIndex)} />
 
-                <BtnButton
-                    text='Skills'
-                    id={null}
-                    className={getTabClassName(SkillsIndex)}
-                    onAction={() => switchTab(SkillsIndex)} />
+                    <BtnButton
+                        text='Skills'
+                        id={null}
+                        className={getTabClassName(SkillsIndex)}
+                        onAction={() => switchTab(SkillsIndex)} />
+                </div>
 
-                <br />
-            </div>
+                <div className='bg-primary-light-s1l3'>
+                    <TabsManager state={showAddTask} />
+                </div>
+            </PageSection>
 
-            <TabsManager state={showAddTask} />
+            <br />
         </>
     )
 }

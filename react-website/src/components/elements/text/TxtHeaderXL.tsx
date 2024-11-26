@@ -2,7 +2,7 @@ import React from 'react';
 
 const TxtHeaderXL = ({ children }) => {
     return (
-        <div id='txtHeaderXL'>
+        <div className='text-primary-dark-s1l1 text-4xl font-bold'>
             {children}
         </div>
     );
