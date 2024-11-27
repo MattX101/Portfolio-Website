@@ -6,7 +6,7 @@ import React from 'react';
 
 function LoadPage() {
   return (
-    <div className='min-h-screen flex flex-col items-center justify-center'>
+    <div className='flex flex-col justify-center items-center min-h-screen'>
       <ProfilePic />
 
       <div className='my-4' />

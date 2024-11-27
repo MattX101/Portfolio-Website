@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import TxtHeader from '../components/elements/text/TxtHeader.tsx';
 import BtnButton from '../components/elements/buttons/BtnButton.tsx';
 
-const tab = 'h-10 hover:h-12 animate-mainPageNavBar_OnHoverExit hover:animate-mainPageNavBar_OnHoverEnter text-center bg-primary-lightHighlight-s2l3 hover:bg-primary-lightHighlight-s2l4 hover:underline';
+const tab = 'h-10 text-center bg-primary-lightHighlight-s2l3 animate-mainPageNavBar_OnHoverExit hover:h-12 hover:underline hover:bg-primary-lightHighlight-s2l4 hover:animate-mainPageNavBar_OnHoverEnter';
 
 const NavMenu = ({ title, activeLink }) => {
     const navigate = useNavigate();
@@ -12,12 +12,12 @@ const NavMenu = ({ title, activeLink }) => {
     useEffect(() => {
         var activeLinkElement = document.getElementById(activeLink) as HTMLElement;
         activeLinkElement.disabled = true;
-        activeLinkElement.className = "h-12 bg-primary-lightHighlight-s2l1 font-bold underline pointer-events-none";
+        activeLinkElement.className = "h-12 font-bold underline pointer-events-none bg-primary-lightHighlight-s2l1";
     });
 
     return (
         <>
-            <header className='p-12 text-center bg-primary-lightHighlight-s2l1'>
+            <header className='bg-primary-lightHighlight-s2l1 p-12 text-center'>
                 <TxtHeader>{title}</TxtHeader>
             </header>
 

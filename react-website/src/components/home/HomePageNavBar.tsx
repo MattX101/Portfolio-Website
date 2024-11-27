@@ -25,8 +25,8 @@ const HomePageNavBar = () => {
 
     function getTabClassName(tab: number) {
         return isTabActive(tab) ?
-            'h-10 relative top-2 bg-primary-light-s1l3 font-bold underline pointer-events-none' : // Active Tab
-            'h-12 top-0 hover:h-10 hover:top-2 animate-homePageNavBar_OnHoverExit hover:animate-homePageNavBar_OnHoverEnter bg-primary-light-s1l5 hover:bg-primary-light-s1l6 hover:underline relative'; // Inactive Tab
+            'relative h-10 top-2 bg-primary-light-s1l3 font-bold underline pointer-events-none' : // Active Tab
+            'relative h-12 top-0 bg-primary-light-s1l5 animate-homePageNavBar_OnHoverExit hover:h-10 hover:top-2 hover:bg-primary-light-s1l6 hover:animate-homePageNavBar_OnHoverEnter hover:underline'; // Inactive Tab
     }
 
     return (

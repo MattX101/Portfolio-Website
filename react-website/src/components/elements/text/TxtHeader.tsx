@@ -2,7 +2,7 @@ import React from 'react';
 
 const TxtHeader = ({ children }) => {
     return (
-        <div className='text-primary-dark-s1l1 text-2xl font-bold'>
+        <div className='font-bold text-2xl text-primary-dark-s1l1'>
             {children}
         </div>
     );

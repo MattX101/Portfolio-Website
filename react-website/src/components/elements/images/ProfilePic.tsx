@@ -6,7 +6,7 @@ const ProfilePic = () => {
         <img
             src={Image}
             alt='Profile Pic'
-            className=' border-primary-dark-s1l1 h-64 sm:h-72 md:h-96 border-solid border-8 rounded-full pointer-events-none'
+            className='border-8 border-primary-dark-s1l1 border-solid rounded-full h-64 sm:h-72 md:h-96 pointer-events-none'
         />
     )
 }
