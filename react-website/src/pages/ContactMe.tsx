@@ -13,7 +13,7 @@ function LoadPage() {
                 activeLink='contact' />
 
             <PageSection>
-                <div className='bg-primary-light-s1l3'>
+                <div className='bg-primary-light-s1l3 dark:bg-primary-dark-s1l3'>
                     <br />
 
                     <TxtSubHeader>

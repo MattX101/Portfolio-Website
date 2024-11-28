@@ -4,7 +4,7 @@ const LineBreak = () => {
     return (
         <div className='flex flex-col items-center'>
             <div className='w-3/5'>
-                <hr className='border-primary-dark-s1l1 my-8' />
+                <hr className='border-primary-dark-s1l1 dark:border-primary-light-s1l1 my-8' />
             </div>
         </div>
     )

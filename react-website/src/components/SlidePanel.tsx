@@ -4,8 +4,8 @@ import BtnPageLink from './elements/buttons/textLink/BtnPageLink.tsx';
 import BtnClosePageLink from './elements/buttons/textLink/BtnClosePageLink.tsx';
 import BtnSlidingToggle from './elements/buttons/textLink/BtnSlidingToggle.tsx';
 
-const closedPanel = 'flex flex-col items-center justify-center fixed overflow-hidden h-full    w-0 top-0 left-0 bg-primary-light-s1l2 animate-slideOverlay_Close'
-const openedPanel = 'flex flex-col items-center justify-center fixed overflow-hidden h-full w-full top-0 left-0 bg-primary-light-s1l2 animate-slideOverlay_Open'
+const closedPanel = 'flex flex-col items-center justify-center fixed overflow-hidden h-full    w-0 top-0 left-0 bg-primary-light-s1l2 dark:bg-primary-dark-s1l2 animate-slideOverlay_Close'
+const openedPanel = 'flex flex-col items-center justify-center fixed overflow-hidden h-full w-full top-0 left-0 bg-primary-light-s1l2 dark:bg-primary-dark-s1l2 animate-slideOverlay_Open'
 
 const SlidePanel = () => {
     const navigate = useNavigate();

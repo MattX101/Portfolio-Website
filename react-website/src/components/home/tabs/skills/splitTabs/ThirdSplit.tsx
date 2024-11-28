@@ -1,7 +1,7 @@
 import React from 'react';
 import TxtBase from '../../../../elements/text/TxtBase.tsx';
 
-const tab = 'p-1 w-full rounded-2xl relative float-left bg-primary-light-s1l1 hover:font-bold hover:bg-primary-lightHighlight-s2l3';
+const tab = 'p-1 w-full rounded-2xl relative float-left bg-primary-light-s1l1 dark:bg-primary-dark-s1l1 hover:font-bold hover:bg-primary-lightHighlight-s2l3 dark:hover:bg-primary-darkHighlight-s2l3';
 
 const ThirdSplit = ({ a, b, c }) => {
     return (

@@ -18,7 +18,7 @@ function LoadPage() {
                 activeLink='about' />
 
             <PageSection>
-                <div className='bg-primary-light-s1l3'>
+                <div className='bg-primary-light-s1l3 dark:bg-primary-dark-s1l3'>
                     <br />
 
                     <TxtBase>Powered by the <b>React</b> Framework</TxtBase>
