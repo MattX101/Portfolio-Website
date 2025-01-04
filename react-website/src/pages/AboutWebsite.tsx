@@ -18,7 +18,7 @@ function LoadPage() {
                 activeLink='about' />
 
             <PageSection>
-                <div className='bg-primary-light-s1l3 dark:bg-primary-dark-s1l3'>
+                <div className='bg-primary-light-s1l3 dark:bg-primary-dark-s1l1'>
                     <br />
 
                     <TxtBase>Powered by the <b>React</b> Framework</TxtBase>
@@ -43,7 +43,11 @@ function LoadPage() {
                     <br />
 
                     <div className='flex flex-col items-center'>
-                        <ImgSmallLogo path={dreamHostLogo} />
+                        <div className='bg-primary-light-s1l3 p-2 rounded-full'>
+                            <div className='w-8'>
+                                <ImgSmallLogo path={dreamHostLogo} />
+                            </div>
+                        </div>
                     </div>
 
                     <br />

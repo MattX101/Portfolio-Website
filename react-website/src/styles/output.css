@@ -657,10 +657,6 @@ video {
   width: 0px;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .w-3\/4 {
   width: 75%;
 }
@@ -671,6 +667,10 @@ video {
 
 .w-4\/5 {
   width: 80%;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-full {
@@ -830,14 +830,14 @@ video {
   background-color: hsl(var(--hue) var(--sat1) var(--light_3) / var(--tw-bg-opacity, 1));
 }
 
+.bg-primary-light-s1l4 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--hue) var(--sat1) var(--light_4) / var(--tw-bg-opacity, 1));
+}
+
 .bg-primary-light-s1l5 {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat1) var(--light_5) / var(--tw-bg-opacity, 1));
-}
-
-.bg-primary-lightHighlight-s2l1 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat2) var(--lightHighlight_1) / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary-lightHighlight-s2l3 {
@@ -849,12 +849,12 @@ video {
   padding: 0.25rem;
 }
 
-.p-12 {
-  padding: 3rem;
-}
-
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-12 {
@@ -929,6 +929,10 @@ video {
   text-decoration-line: underline;
 }
 
+.decoration-primary-dark-s3l6 {
+  text-decoration-color: hsl(var(--hue), var(--sat3), var(--dark_6));
+}
+
 :root {
   --hue: 210;
   --sat1: 100%;
@@ -951,18 +955,18 @@ video {
   --lightHighlight_4: calc(var(--lightHighlight_1) - var(--thirdInc));
   --lightHighlight_5: calc(var(--lightHighlight_1) - var(--forthInc));
   --lightHighlight_6: calc(var(--lightHighlight_1) - var(--fifthInc));
-  --dark_1: 20%;
-  --dark_2: calc(var(--dark_1) + var(--firstInc));
-  --dark_3: calc(var(--dark_1) + var(--secondInc));
-  --dark_4: calc(var(--dark_1) + var(--thirdInc));
-  --dark_5: calc(var(--dark_1) + var(--forthInc));
-  --dark_6: calc(var(--dark_1) + var(--fifthInc));
-  --darkHighlight_1: 40%;
-  --darkHighlight_2: calc(var(--darkHighlight_1) + var(--firstInc));
-  --darkHighlight_3: calc(var(--darkHighlight_1) + var(--secondInc));
-  --darkHighlight_4: calc(var(--darkHighlight_1) + var(--thirdInc));
-  --darkHighlight_5: calc(var(--darkHighlight_1) + var(--forthInc));
-  --darkHighlight_6: calc(var(--darkHighlight_1) + var(--fifthInc));
+  --dark_1: 10%;
+  --dark_2: calc(var(--dark_1) - var(--firstInc));
+  --dark_3: calc(var(--dark_1) - var(--secondInc));
+  --dark_4: calc(var(--dark_1) - var(--thirdInc));
+  --dark_5: calc(var(--dark_1) - var(--forthInc));
+  --dark_6: calc(var(--dark_1) - var(--fifthInc));
+  --darkHighlight_1: 20%;
+  --darkHighlight_2: calc(var(--darkHighlight_1) - var(--firstInc));
+  --darkHighlight_3: calc(var(--darkHighlight_1) - var(--secondInc));
+  --darkHighlight_4: calc(var(--darkHighlight_1) - var(--thirdInc));
+  --darkHighlight_5: calc(var(--darkHighlight_1) - var(--forthInc));
+  --darkHighlight_6: calc(var(--darkHighlight_1) - var(--fifthInc));
 }
 
 .hover\:top-2:hover {
@@ -1007,33 +1011,14 @@ video {
   animation: mainPageNavBar_OnHoverEnter 0.1s ease-in-out;
 }
 
-.hover\:bg-primary-darkHighlight-s1l6:hover {
+.hover\:bg-primary-lightHighlight-s1l6:hover {
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--darkHighlight_6) / var(--tw-bg-opacity, 1));
+  background-color: hsl(var(--hue) var(--sat1) var(--lightHighlight_6) / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-primary-light-s1l6:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--light_6) / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-primary-lightHighlight-s2l3:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat2) var(--lightHighlight_3) / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-primary-lightHighlight-s2l4:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat2) var(--lightHighlight_4) / var(--tw-bg-opacity, 1));
-}
-
-.hover\:font-bold:hover {
-  font-weight: 700;
-}
-
-.hover\:text-primary-darkHighlight-s1l6:hover {
+.hover\:text-primary-lightHighlight-s1l6:hover {
   --tw-text-opacity: 1;
-  color: hsl(var(--hue) var(--sat1) var(--darkHighlight_6) / var(--tw-text-opacity, 1));
+  color: hsl(var(--hue) var(--sat1) var(--lightHighlight_6) / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-red-600:hover {
@@ -1088,24 +1073,19 @@ video {
   background-color: hsl(var(--hue) var(--sat1) var(--dark_2) / var(--tw-bg-opacity, 1));
 }
 
-.dark\:bg-primary-dark-s1l3:where(.dark, .dark *) {
+.dark\:bg-primary-dark-s1l6:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--dark_3) / var(--tw-bg-opacity, 1));
-}
-
-.dark\:bg-primary-dark-s1l5:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--dark_5) / var(--tw-bg-opacity, 1));
-}
-
-.dark\:bg-primary-darkHighlight-s2l1:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_1) / var(--tw-bg-opacity, 1));
+  background-color: hsl(var(--hue) var(--sat1) var(--dark_6) / var(--tw-bg-opacity, 1));
 }
 
 .dark\:bg-primary-darkHighlight-s2l3:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_3) / var(--tw-bg-opacity, 1));
+}
+
+.dark\:bg-primary-darkHighlight-s2l4:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_4) / var(--tw-bg-opacity, 1));
 }
 
 .dark\:bg-primary-light-s1l1:where(.dark, .dark *) {
@@ -1133,27 +1113,15 @@ video {
   color: hsl(var(--hue) var(--sat1) var(--lightHighlight_1) / var(--tw-text-opacity, 1));
 }
 
-.dark\:hover\:bg-primary-dark-s1l6:hover:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--dark_6) / var(--tw-bg-opacity, 1));
+.dark\:decoration-primary-light-s3l6:where(.dark, .dark *) {
+  text-decoration-color: hsl(var(--hue), var(--sat3), var(--light_6));
 }
 
-.dark\:hover\:bg-primary-darkHighlight-s2l3:hover:where(.dark, .dark *) {
+.dark\:hover\:bg-primary-darkHighlight-s1l1:hover:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_3) / var(--tw-bg-opacity, 1));
+  background-color: hsl(var(--hue) var(--sat1) var(--darkHighlight_1) / var(--tw-bg-opacity, 1));
 }
 
-.dark\:hover\:bg-primary-darkHighlight-s2l4:hover:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_4) / var(--tw-bg-opacity, 1));
-}
-
-.dark\:hover\:bg-primary-lightHighlight-s1l6:hover:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--lightHighlight_6) / var(--tw-bg-opacity, 1));
-}
-
-.dark\:hover\:text-primary-lightHighlight-s1l6:hover:where(.dark, .dark *) {
-  --tw-text-opacity: 1;
-  color: hsl(var(--hue) var(--sat1) var(--lightHighlight_6) / var(--tw-text-opacity, 1));
+.hover\:dark\:decoration-primary-light-s3l6:where(.dark, .dark *):hover {
+  text-decoration-color: hsl(var(--hue), var(--sat3), var(--light_6));
 }

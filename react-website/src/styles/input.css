@@ -29,17 +29,17 @@
   --lightHighlight_5: calc(var(--lightHighlight_1) - var(--forthInc));
   --lightHighlight_6: calc(var(--lightHighlight_1) - var(--fifthInc));
   
-  --dark_1: 20%;
-  --dark_2: calc(var(--dark_1) + var(--firstInc));
-  --dark_3: calc(var(--dark_1) + var(--secondInc));
-  --dark_4: calc(var(--dark_1) + var(--thirdInc));
-  --dark_5: calc(var(--dark_1) + var(--forthInc));
-  --dark_6: calc(var(--dark_1) + var(--fifthInc));
+  --dark_1: 10%;
+  --dark_2: calc(var(--dark_1) - var(--firstInc));
+  --dark_3: calc(var(--dark_1) - var(--secondInc));
+  --dark_4: calc(var(--dark_1) - var(--thirdInc));
+  --dark_5: calc(var(--dark_1) - var(--forthInc));
+  --dark_6: calc(var(--dark_1) - var(--fifthInc));
 
-  --darkHighlight_1: 40%;
-  --darkHighlight_2: calc(var(--darkHighlight_1) + var(--firstInc));
-  --darkHighlight_3: calc(var(--darkHighlight_1) + var(--secondInc));
-  --darkHighlight_4: calc(var(--darkHighlight_1) + var(--thirdInc));
-  --darkHighlight_5: calc(var(--darkHighlight_1) + var(--forthInc));
-  --darkHighlight_6: calc(var(--darkHighlight_1) + var(--fifthInc));
+  --darkHighlight_1: 20%;
+  --darkHighlight_2: calc(var(--darkHighlight_1) - var(--firstInc));
+  --darkHighlight_3: calc(var(--darkHighlight_1) - var(--secondInc));
+  --darkHighlight_4: calc(var(--darkHighlight_1) - var(--thirdInc));
+  --darkHighlight_5: calc(var(--darkHighlight_1) - var(--forthInc));
+  --darkHighlight_6: calc(var(--darkHighlight_1) - var(--fifthInc));
 }

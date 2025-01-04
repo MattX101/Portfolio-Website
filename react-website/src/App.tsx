@@ -10,7 +10,7 @@ import React from "react";
 export default function App() {
     return (
         <div id="globalColourMode" className="">
-            <div className="bg-primary-light-s1l1 dark:bg-primary-dark-s1l1 min-h-screen">
+            <div className="bg-primary-light-s1l1 dark:bg-primary-dark-s1l6 min-h-screen">
                 <BtnToggleColourMode />
 
                 <BrowserRouter>
