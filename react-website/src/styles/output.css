@@ -573,8 +573,8 @@ video {
   top: 0px;
 }
 
-.top-2 {
-  top: 0.5rem;
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 
 .float-left {
@@ -677,22 +677,6 @@ video {
   width: 100%;
 }
 
-@keyframes homePageNavBar_OnHoverExit {
-  from {
-    height: 40px;
-    top: 8px;
-  }
-
-  to {
-    height: 48px;
-    top: 0px;
-  }
-}
-
-.animate-homePageNavBar_OnHoverExit {
-  animation: homePageNavBar_OnHoverExit 0.1s ease-in-out;
-}
-
 @keyframes mainPageNavBar_OnHoverExit {
   from {
     height: 48px;
@@ -763,6 +747,10 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-rows-1 {
@@ -838,6 +826,11 @@ video {
 .bg-primary-light-s1l5 {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat1) var(--light_5) / var(--tw-bg-opacity, 1));
+}
+
+.bg-primary-light-s2l6 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--hue) var(--sat2) var(--light_6) / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary-lightHighlight-s2l3 {
@@ -969,32 +962,8 @@ video {
   --darkHighlight_6: calc(var(--darkHighlight_1) - var(--fifthInc));
 }
 
-.hover\:top-2:hover {
-  top: 0.5rem;
-}
-
-.hover\:h-10:hover {
-  height: 2.5rem;
-}
-
 .hover\:h-12:hover {
   height: 3rem;
-}
-
-@keyframes homePageNavBar_OnHoverEnter {
-  from {
-    height: 48px;
-    top: 0px;
-  }
-
-  to {
-    height: 40px;
-    top: 8px;
-  }
-}
-
-.hover\:animate-homePageNavBar_OnHoverEnter:hover {
-  animation: homePageNavBar_OnHoverEnter 0.1s ease-in-out;
 }
 
 @keyframes mainPageNavBar_OnHoverEnter {
@@ -1011,9 +980,18 @@ video {
   animation: mainPageNavBar_OnHoverEnter 0.1s ease-in-out;
 }
 
+.hover\:bg-primary-light-s1l2:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--hue) var(--sat1) var(--light_2) / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-primary-lightHighlight-s1l6:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat1) var(--lightHighlight_6) / var(--tw-bg-opacity, 1));
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
 }
 
 .hover\:text-primary-lightHighlight-s1l6:hover {
@@ -1078,6 +1056,11 @@ video {
   background-color: hsl(var(--hue) var(--sat1) var(--dark_6) / var(--tw-bg-opacity, 1));
 }
 
+.dark\:bg-primary-dark-s2l3:where(.dark, .dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--hue) var(--sat2) var(--dark_3) / var(--tw-bg-opacity, 1));
+}
+
 .dark\:bg-primary-darkHighlight-s2l3:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_3) / var(--tw-bg-opacity, 1));
@@ -1113,6 +1096,10 @@ video {
   color: hsl(var(--hue) var(--sat1) var(--lightHighlight_1) / var(--tw-text-opacity, 1));
 }
 
+.dark\:decoration-primary-light-s2l4:where(.dark, .dark *) {
+  text-decoration-color: hsl(var(--hue), var(--sat2), var(--light_4));
+}
+
 .dark\:decoration-primary-light-s3l6:where(.dark, .dark *) {
   text-decoration-color: hsl(var(--hue), var(--sat3), var(--light_6));
 }
@@ -1120,6 +1107,11 @@ video {
 .dark\:hover\:bg-primary-darkHighlight-s1l1:hover:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat1) var(--darkHighlight_1) / var(--tw-bg-opacity, 1));
+}
+
+.hover\:dark\:bg-primary-darkHighlight-s2l1:where(.dark, .dark *):hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_1) / var(--tw-bg-opacity, 1));
 }
 
 .hover\:dark\:decoration-primary-light-s3l6:where(.dark, .dark *):hover {
