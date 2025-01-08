@@ -1,22 +1,17 @@
 import React from 'react';
-import PageSection from '../components/PageSection.tsx';
-import MainPagesNavMenu from '../components/MainPagesNavMenu.tsx'
-import reactLogo from '../images/React Logo.png';
-import dreamHostLogo from '../images/DreamHost Logo.png';
-import ContentSection from '../components/ContentSection.tsx';
-import TxtBase from '../components/elements/text/TxtBase.tsx';
-import ImgSmallLogo from '../components/elements/images/ImgSmallLogo.tsx';
-import ImgBigLogo from '../components/elements/images/ImgBigLogo.tsx';
-import LineBreak from '../components/elements/LineBreak.tsx';
-import SecondSplit from '../components/home/tabs/skills/splitTabs/SecondSplit.tsx';
+import PageSection from '../../../components/PageSection.tsx';
+import ContentSection from '../../../components/ContentSection.tsx';
+import TxtBase from '../../../components/elements/text/TxtBase.tsx';
+import ImgSmallLogo from '../../elements/images/ImgSmallLogo.tsx';
+import LineBreak from '../../elements/LineBreak.tsx';
+import ImgBigLogo from '../../elements/images/ImgBigLogo.tsx';
+import SecondSplit from './skills/splitTabs/SecondSplit.tsx';
+import reactLogo from '../../../images/React Logo.png';
+import dreamHostLogo from '../../../images/DreamHost Logo.png';
 
-function LoadPage() {
+const AboutWebsiteTab = () => {
     return (
         <>
-            <MainPagesNavMenu
-                title='About Website'
-                activeLink='about' />
-
             <PageSection>
                 <div className='bg-primary-light-s1l3 dark:bg-primary-dark-s1l1'>
                     <br />
@@ -58,10 +53,8 @@ function LoadPage() {
                     <br />
                 </div>
             </PageSection>
-
-            <br />
         </>
-    );
+    )
 }
 
-export default LoadPage;
+export default AboutWebsiteTab

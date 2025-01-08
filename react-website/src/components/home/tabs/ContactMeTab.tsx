@@ -1,17 +1,12 @@
 import React from 'react';
-import PageSection from '../components/PageSection.tsx';
-import MainPagesNavMenu from '../components/MainPagesNavMenu.tsx'
-import TxtSubHeader from '../components/elements/text/TxtSubHeader.tsx';
-import TxtBaseXL from '../components/elements/text/TxtBaseXL.tsx';
-import TxtBase from '../components/elements/text/TxtBase.tsx';
+import PageSection from '../../PageSection.tsx';
+import TxtSubHeader from '../../elements/text/TxtSubHeader.tsx';
+import TxtBaseXL from '../../elements/text/TxtBaseXL.tsx';
+import TxtBase from '../../elements/text/TxtBase.tsx';
 
-function LoadPage() {
+const ContactMeTab = () => {
     return (
         <>
-            <MainPagesNavMenu
-                title='Contact Me'
-                activeLink='contact' />
-
             <PageSection>
                 <div className='bg-primary-light-s1l3 dark:bg-primary-dark-s1l1'>
                     <br />
@@ -30,10 +25,8 @@ function LoadPage() {
                     <br />
                 </div>
             </PageSection>
-
-            <br />
         </>
-    );
+    )
 }
 
-export default LoadPage;
+export default ContactMeTab

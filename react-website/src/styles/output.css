@@ -561,16 +561,8 @@ video {
   bottom: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .right-0 {
   right: 0px;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .col-span-4 {
@@ -629,10 +621,6 @@ video {
   height: 2.5rem;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-16 {
   height: 4rem;
 }
@@ -645,20 +633,8 @@ video {
   height: 2rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-0 {
-  width: 0px;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .w-3\/5 {
@@ -675,52 +651,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-@keyframes mainPageNavBar_OnHoverExit {
-  from {
-    height: 48px;
-  }
-
-  to {
-    height: 40px;
-  }
-}
-
-.animate-mainPageNavBar_OnHoverExit {
-  animation: mainPageNavBar_OnHoverExit 0.1s ease-in-out;
-}
-
-@keyframes slideOverlay_Close {
-  from {
-    width: 100vw;
-    opacity: 1;
-  }
-
-  to {
-    width: 0px;
-    opacity: 0;
-  }
-}
-
-.animate-slideOverlay_Close {
-  animation: slideOverlay_Close 1s;
-}
-
-@keyframes slideOverlay_Open {
-  from {
-    width: 0px;
-    opacity: 0;
-  }
-
-  to {
-    width: 100vw;
-    opacity: 1;
-  }
-}
-
-.animate-slideOverlay_Open {
-  animation: slideOverlay_Open 1s;
 }
 
 @keyframes slidingButton {
@@ -808,19 +738,9 @@ video {
   background-color: hsl(var(--hue) var(--sat1) var(--light_1) / var(--tw-bg-opacity, 1));
 }
 
-.bg-primary-light-s1l2 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--light_2) / var(--tw-bg-opacity, 1));
-}
-
 .bg-primary-light-s1l3 {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat1) var(--light_3) / var(--tw-bg-opacity, 1));
-}
-
-.bg-primary-light-s1l4 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--light_4) / var(--tw-bg-opacity, 1));
 }
 
 .bg-primary-light-s1l5 {
@@ -846,10 +766,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -858,6 +774,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -922,10 +843,6 @@ video {
   text-decoration-line: underline;
 }
 
-.decoration-primary-dark-s3l6 {
-  text-decoration-color: hsl(var(--hue), var(--sat3), var(--dark_6));
-}
-
 :root {
   --hue: 210;
   --sat1: 100%;
@@ -960,24 +877,6 @@ video {
   --darkHighlight_4: calc(var(--darkHighlight_1) - var(--thirdInc));
   --darkHighlight_5: calc(var(--darkHighlight_1) - var(--forthInc));
   --darkHighlight_6: calc(var(--darkHighlight_1) - var(--fifthInc));
-}
-
-.hover\:h-12:hover {
-  height: 3rem;
-}
-
-@keyframes mainPageNavBar_OnHoverEnter {
-  from {
-    height: 40px;
-  }
-
-  to {
-    height: 48px;
-  }
-}
-
-.hover\:animate-mainPageNavBar_OnHoverEnter:hover {
-  animation: mainPageNavBar_OnHoverEnter 0.1s ease-in-out;
 }
 
 .hover\:bg-primary-light-s1l2:hover {
@@ -1046,11 +945,6 @@ video {
   background-color: hsl(var(--hue) var(--sat1) var(--dark_1) / var(--tw-bg-opacity, 1));
 }
 
-.dark\:bg-primary-dark-s1l2:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--hue) var(--sat1) var(--dark_2) / var(--tw-bg-opacity, 1));
-}
-
 .dark\:bg-primary-dark-s1l6:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat1) var(--dark_6) / var(--tw-bg-opacity, 1));
@@ -1100,10 +994,6 @@ video {
   text-decoration-color: hsl(var(--hue), var(--sat2), var(--light_4));
 }
 
-.dark\:decoration-primary-light-s3l6:where(.dark, .dark *) {
-  text-decoration-color: hsl(var(--hue), var(--sat3), var(--light_6));
-}
-
 .dark\:hover\:bg-primary-darkHighlight-s1l1:hover:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat1) var(--darkHighlight_1) / var(--tw-bg-opacity, 1));
@@ -1112,8 +1002,4 @@ video {
 .hover\:dark\:bg-primary-darkHighlight-s2l1:where(.dark, .dark *):hover {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_1) / var(--tw-bg-opacity, 1));
-}
-
-.hover\:dark\:decoration-primary-light-s3l6:where(.dark, .dark *):hover {
-  text-decoration-color: hsl(var(--hue), var(--sat3), var(--light_6));
 }

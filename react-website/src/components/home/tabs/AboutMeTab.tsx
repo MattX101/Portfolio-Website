@@ -66,6 +66,8 @@ const AboutMeTab = () => {
                     <TxtBase>I would love to learn how to play the piano</TxtBase>
                 </ContentSection>
             </PageSection>
+
+            <br />
         </>
     )
 }
