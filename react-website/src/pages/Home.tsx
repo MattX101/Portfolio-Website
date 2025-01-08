@@ -13,8 +13,7 @@ const AboutMeIndex = 1;
 const EducationIndex = 2;
 const WorkIndex = 3;
 const SkillsIndex = 4;
-const ContactMeIndex = 5;
-const AboutWebsiteIndex = 6;
+const AboutWebsiteIndex = 5;
 
 var activeTab = AboutMeIndex;
 
@@ -28,14 +27,13 @@ function LoadPage() {
 
     function renderTab() {
         switch (activeTab) {
-            case AboutMeIndex:      return <AboutMeTab />;
-            case EducationIndex:    return <EducationTab />;
-            case WorkIndex:         return <WorkTab />;
-            case SkillsIndex:       return <SkillsTab />;
-            case ContactMeIndex:    return <ContactMeTab />;
+            case AboutMeIndex: return <AboutMeTab />;
+            case EducationIndex: return <EducationTab />;
+            case WorkIndex: return <WorkTab />;
+            case SkillsIndex: return <SkillsTab />;
             case AboutWebsiteIndex: return <AboutWebsiteTab />;
-            
-            default:                return <AboutMeTab />;
+
+            default: return <AboutMeTab />;
         }
     }
 
@@ -80,16 +78,12 @@ function LoadPage() {
                                 onAction={() => switchTab(SkillsIndex)} />
 
                             <BtnButton
-                                text='Contact Me'
-                                id={null}
-                                className={getTabClassName(ContactMeIndex)}
-                                onAction={() => switchTab(ContactMeIndex)} />
-
-                            <BtnButton
                                 text='About Website'
                                 id={null}
                                 className={getTabClassName(AboutWebsiteIndex)}
                                 onAction={() => switchTab(AboutWebsiteIndex)} />
+
+                            <ContactMeTab />
                         </div>
 
                         <div className='col-span-4 bg-primary-light-s1l3 dark:bg-primary-dark-s1l1'>
