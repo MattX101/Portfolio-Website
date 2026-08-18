@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@source "../src";
+
 :root {
   --hue: 210;
 
@@ -42,4 +44,14 @@
   --darkHighlight_4: calc(var(--darkHighlight_1) - var(--thirdInc));
   --darkHighlight_5: calc(var(--darkHighlight_1) - var(--forthInc));
   --darkHighlight_6: calc(var(--darkHighlight_1) - var(--fifthInc));
+
+  z-index: -10;
+}
+
+:root {
+  --particle-links: hsl(var(--hue), var(--sat1), var(--dark_1));
+}
+
+.dark {
+  --particle-links: hsl(var(--hue), var(--sat1), var(--light_1));
 }

@@ -3,12 +3,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing.tsx";
 import Home from "./pages/Home.tsx";
 import BtnToggleColourMode from "./components/elements/buttons/BtnToggleColourMode.tsx"
+import ParticleBackground from "./components/ParticleBackground.tsx";
 import React from "react";
 
 export default function App() {
     return (
         <div id="globalColourMode" className="">
             <div className="bg-primary-light-s1l1 dark:bg-primary-dark-s1l6 min-h-screen">
+                <ParticleBackground />
                 <BtnToggleColourMode />
 
                 <BrowserRouter>

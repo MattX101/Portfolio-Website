@@ -50,6 +50,7 @@
   --tw-contain-layout:  ;
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
+  z-index: 10;
 }
 
 ::backdrop {
@@ -1015,4 +1016,12 @@ video {
 .hover\:dark\:bg-primary-darkHighlight-s2l1:where(.dark, .dark *):hover {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--hue) var(--sat2) var(--darkHighlight_1) / var(--tw-bg-opacity, 1));
+}
+
+:root {
+  --particle-links: hsl(var(--hue), var(--sat1), var(--dark_1));
+}
+
+.dark {
+  --particle-links: hsl(var(--hue), var(--sat1), var(--light_1));
 }
