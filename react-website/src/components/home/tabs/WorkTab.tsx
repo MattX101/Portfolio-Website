@@ -14,6 +14,14 @@ const WorkTab = () => {
                 <TxtHeader>Work Experience</TxtHeader>
                 <br />
             </PageSection>
+
+            <LineBreak />
+
+            <PageSection>
+                <TxtBaseXL>Clerical Officer</TxtBaseXL>
+                <TxtBase>Agenzija Komunita Malta</TxtBase>
+                <TxtBase>Febuary 2025 - Now</TxtBase>
+            </PageSection>
             
             <LineBreak />
 
@@ -22,7 +30,7 @@ const WorkTab = () => {
                 <TxtBase>Malta Police Force</TxtBase>
                 <TxtBase>September 2022 - June 2023</TxtBase>
             </PageSection>
-
+            
             <LineBreak />
         </>
     )

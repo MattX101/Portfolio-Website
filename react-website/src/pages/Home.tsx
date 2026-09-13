@@ -3,6 +3,7 @@ import PageSection from '../components/PageSection.tsx';
 import BtnButton from '../components/elements/buttons/BtnButton.tsx';
 
 import AboutMeTab from '../components/home/tabs/AboutMeTab.tsx';
+import ProjectsTab from '../components/home/tabs/ProjectsTab.tsx';
 import EducationTab from '../components/home/tabs/education/EducationTab.tsx';
 import WorkTab from '../components/home/tabs/WorkTab.tsx';
 import SkillsTab from '../components/home/tabs/skills/SkillsTab.tsx';
@@ -10,10 +11,11 @@ import ContactMeTab from '../components/home/tabs/ContactMeTab.tsx';
 import AboutWebsiteTab from '../components/home/tabs/AboutWebsiteTab.tsx';
 
 const AboutMeIndex = 1;
-const EducationIndex = 2;
-const WorkIndex = 3;
-const SkillsIndex = 4;
-const AboutWebsiteIndex = 5;
+const ProjectsIndex = 2;
+const EducationIndex = 3;
+const WorkIndex = 4;
+const SkillsIndex = 5;
+const AboutWebsiteIndex = 6;
 
 var activeTab = AboutMeIndex;
 
@@ -28,6 +30,7 @@ function LoadPage() {
     function renderTab() {
         switch (activeTab) {
             case AboutMeIndex: return <AboutMeTab />;
+            case ProjectsIndex: return <ProjectsTab />;
             case EducationIndex: return <EducationTab />;
             case WorkIndex: return <WorkTab />;
             case SkillsIndex: return <SkillsTab />;
@@ -58,6 +61,12 @@ function LoadPage() {
                                 id={null}
                                 className={getTabClassName(AboutMeIndex)}
                                 onAction={() => switchTab(AboutMeIndex)} />
+
+                            <BtnButton
+                                text='Projects'
+                                id={null}
+                                className={getTabClassName(ProjectsIndex)}
+                                onAction={() => switchTab(ProjectsIndex)} />
 
                             <BtnButton
                                 text='Education'
