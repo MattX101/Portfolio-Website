@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 
 import PageSection from '../../components/PageSection.tsx';
+import LeftImageContent from '../../components/home/projects/LeftImageContent.tsx';
+import RightImageContent from '../../components/home/projects/RightImageContent.tsx';
+import CenteredImageContent from '../../components/home/projects/CenteredImageContent.tsx';
 import TxtBase from '../../components/elements/text/TxtBase.tsx'
-import TxtBaseXL from '../../components/elements/text/TxtBaseXL.tsx'
 import TxtHeaderXL from '../../components/elements/text/TxtHeaderXL.tsx'
 import TxtHeader from '../../components/elements/text/TxtHeader.tsx'
 import BtnButton from '../../components/elements/buttons/BtnButton.tsx'
@@ -39,51 +41,33 @@ function LoadPage() {
                         <br />
 
                         <TxtHeader>Features</TxtHeader>
+                        <br />
 
-                        <br />
-                        <TxtBaseXL>Spawnable Nodes</TxtBaseXL>
-                        <br />
-                        <TxtBase>With a built-in dropdown menu allowing for the addition of all available nodes into the graph for the use of visual programming.</TxtBase>
-                        <br />
-                        <img
-                            src={SpawnableNodesImage}
-                            alt='Spawnable Nodes'
-                            className='pointer-events-none'
+                        <LeftImageContent
+                            image={SpawnableNodesImage}
+                            imageAlt='Spawnable Nodes'
+                            title='Spawnable Nodes'
+                            summary='With a built-in dropdown menu allowing for the addition of all available nodes into the graph for the use of visual programming.'
                         />
 
-                        <br />
-                        <TxtBaseXL>Interactable UI Input Elements</TxtBaseXL>
-                        <br />
-                        <TxtBase>Allows the need for dynamic programming throughout the entire graph.</TxtBase>
-                        <br />
-                        <img
-                            src={InteractableUIImage}
-                            alt='Interactable UI'
-                            className='pointer-events-none'
+                        <CenteredImageContent
+                            image={InteractableUIImage}
+                            imageAlt='Interactable UI'
+                            title='Interactable UI Input Elements'
+                            summary='Allows the need for dynamic programming throughout the entire graph.' />
+
+                        <RightImageContent
+                            image={FixedGridImage}
+                            imageAlt='Consistent Grid'
+                            title='Consistent Grid Background'
+                            summary='Does not matter what zoom level or where the camera is located, the background grid remains consistent..'
                         />
 
-                        <br />
-                        <TxtBaseXL>Consistent Grid Background</TxtBaseXL>
-                        <br />
-                        <TxtBase>Does not matter what zoom level or where the camera is located, the background grid remains consistent.</TxtBase>
-                        <br />
-                        <img
-                            src={FixedGridImage}
-                            alt='Consistent Grid'
-                            className='pointer-events-none'
-                        />
-
-                        <br />
-                        <TxtBaseXL>Save States</TxtBaseXL>
-                        <br />
-                        <TxtBase>Save the node graph to disk for future work.</TxtBase>
-                        <br />
-                        <img
-                            src={SaveStateImage}
-                            alt='Save States'
-                            className='pointer-events-none'
-                        />
-                        <br />
+                        <CenteredImageContent
+                            image={SaveStateImage}
+                            imageAlt='Save States'
+                            title='Save States'
+                            summary='Save the node graph to disk for future work.' />
                     </PageSection>
 
                     <BtnButton

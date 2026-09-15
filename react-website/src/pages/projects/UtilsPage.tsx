@@ -1,6 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
 import PageSection from '../../components/PageSection.tsx';
+import LeftImageContent from '../../components/home/projects/LeftImageContent.tsx';
+import RightImageContent from '../../components/home/projects/RightImageContent.tsx';
+import CenteredImageContent from '../../components/home/projects/CenteredImageContent.tsx';
 import TxtBase from '../../components/elements/text/TxtBase.tsx'
 import TxtBaseXL from '../../components/elements/text/TxtBaseXL.tsx'
 import TxtHeaderXL from '../../components/elements/text/TxtHeaderXL.tsx'
@@ -34,61 +37,39 @@ function LoadPage() {
                         <br />
 
                         <TxtHeader>Features</TxtHeader>
-
                         <br />
-                        <TxtBaseXL>Colouring</TxtBaseXL>
-                        <br />
-                        <TxtBase>Convert a grayscale image into a colour image.</TxtBase>
-                        <br />
-                        <img
-                            src={ColourImage}
-                            alt='Colour'
-                            className='pointer-events-none'
+                        
+                        <LeftImageContent
+                            image={ColourImage}
+                            imageAlt='Colour'
+                            title='Colouring'
+                            summary='Convert a grayscale image into a colour image.'
                         />
 
-                        <br />
-                        <TxtBaseXL>Colour Conversion</TxtBaseXL>
-                        <br />
-                        <TxtBase>Converts one Colour model to another (i.e. RGB to HSL)</TxtBase>
-                        <br />
-                        <img
-                            src={ColourConversionModesImage}
-                            alt='Colour Conversion Modes'
-                            className='pointer-events-none'
+                        <CenteredImageContent
+                            image={ColourConversionModesImage}
+                            imageAlt='Colour Conversion'
+                            title='Colour Conversion'
+                            summary='Converts one Colour model to another (i.e. RGB to HSL)' />
+
+                        <CenteredImageContent
+                            image={BlendModesImage}
+                            imageAlt='Colour Blending'
+                            title='Colour Blending'
+                            summary='Combines 2 colour images into 1 wholely diffrent image.' />
+                        
+                        <RightImageContent
+                            image={CurvesImage}
+                            imageAlt='Curves'
+                            title='Curves'
+                            summary='Leveraging standard math equations to generate a curve for use in other applications.'
                         />
 
-                        <br />
-                        <TxtBaseXL>Colour Blending</TxtBaseXL>
-                        <br />
-                        <TxtBase>Combines 2 colour images into 1 wholely diffrent image.</TxtBase>
-                        <br />
-                        <img
-                            src={BlendModesImage}
-                            alt='Colour Blending'
-                            className='pointer-events-none'
-                        />
-
-                        <br />
-                        <TxtBaseXL>Curves</TxtBaseXL>
-                        <br />
-                        <TxtBase>Leveraging standard math equations to generate a curve for use in other applications.</TxtBase>
-                        <br />
-                        <img
-                            src={CurvesImage}
-                            alt='Curves'
-                            className='pointer-events-none'
-                        />
-
-                        <br />
-                        <TxtBaseXL>Bluring & Sharpening</TxtBaseXL>
-                        <br />
-                        <TxtBase>An applied filter directly to the image that visually effects the end result.</TxtBase>
-                        <br />
-                        <img
-                            src={FiltersImage}
-                            alt='Bluring and Sharpening'
-                            className='pointer-events-none'
-                        />
+                        <CenteredImageContent
+                            image={FiltersImage}
+                            imageAlt='Bluring and Sharpening'
+                            title='Bluring & Sharpening'
+                            summary='An applied filter directly to the image that visually effects the end result.' />
 
                         <br />
                         <TxtBaseXL>Serialisation</TxtBaseXL>
@@ -96,34 +77,20 @@ function LoadPage() {
                         <TxtBase>Write any data straight to the disk.</TxtBase>
                         <br />
 
-                        <br />
-                        <TxtBaseXL>Noise Generaion</TxtBaseXL>
-                        <br />
-                        <TxtBase>
-                            Not just the standard Perlin Noise, with various Noise types along with different Fractal patterns achieve near endless possibilities.
-                        </TxtBase>
-                        <br />
-                        <img
-                            src={NoiseImage}
-                            alt='Noise Generaion'
-                            className='pointer-events-none'
+                        <CenteredImageContent
+                            image={NoiseImage}
+                            imageAlt='Noise Generaion'
+                            title='Noise Generaion'
+                            summary='Not just the standard Perlin Noise, with various Noise types along with different Fractal patterns achieve near endless possibilities.' />
+                        
+                        <LeftImageContent
+                            image={MaskImage}
+                            imageAlt='Masks'
+                            title='Masks'
+                            summary='With a modified circle equation,
+                                    complex masks can be generated for the use of
+                                    modifying procedural data generated via noise.'
                         />
-
-                        <br />
-                        <TxtBaseXL>Masks</TxtBaseXL>
-                        <br />
-                        <TxtBase>
-                            With a modified circle equation, 
-                            complex masks can be generated for the use of 
-                            modifying procedural data generated via noise.
-                        </TxtBase>
-                        <br />
-                        <img
-                            src={MaskImage}
-                            alt='Masks'
-                            className='pointer-events-none'
-                        />
-                        <br />
                     </PageSection>
 
                     <BtnButton

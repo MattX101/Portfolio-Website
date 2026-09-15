@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 import PageSection from '../../components/PageSection.tsx';
+import LeftImageContent from '../../components/home/projects/LeftImageContent.tsx';
+import CenteredImageContent from '../../components/home/projects/CenteredImageContent.tsx';
 import TxtBase from '../../components/elements/text/TxtBase.tsx'
 import TxtBaseXL from '../../components/elements/text/TxtBaseXL.tsx'
 import TxtHeaderXL from '../../components/elements/text/TxtHeaderXL.tsx'
@@ -38,61 +40,35 @@ function LoadPage() {
                         <br />
 
                         <TxtHeader>Features</TxtHeader>
+                        <br />
 
-                        <br />
-                        <TxtBaseXL>Noise</TxtBaseXL>
-                        <br />
-                        <TxtBase>
-                            Not just the standard Perlin Noise, 
-                            with various Noise types along with different 
-                            Fractal patterns achieve near endless possibilities.
-                        </TxtBase>
-                        <br />
-                        <img
-                            src={NoiseImage}
-                            alt='Noise'
-                            className='pointer-events-none'
+                        <CenteredImageContent
+                            image={NoiseImage}
+                            imageAlt='Noise'
+                            title='Noise'
+                            summary='Not just the standard Perlin Noise,
+                            with various Noise types along with different
+                            Fractal patterns achieve near endless possibilities.' />
+
+                        <LeftImageContent
+                            image={ColouringImage}
+                            imageAlt='Colouring'
+                            title='Colouring'
+                            summary='Whether a single colour or a more advanced multi-colour gradient,
+                                    only your understanding in colour theory is the limit.'
                         />
 
-                        <br />
-                        <TxtBaseXL>Colouring</TxtBaseXL>
-                        <br />
-                        <TxtBase>
-                            Whether a single colour or a more advanced multi-colour gradient, 
-                            only your understanding in colour theory is the limit.
-                        </TxtBase>
-                        <br />
-                        <img
-                            src={ColouringImage}
-                            alt='Colouring'
-                            className='pointer-events-none'
-                        />
+                        <CenteredImageContent
+                            image={BlendingImage}
+                            imageAlt='Blending'
+                            title='Blending'
+                            summary='With over a dozen different blend modes unlock endless diffrent combinations of noise patterns.' />
 
-                        <br />
-                        <TxtBaseXL>Blending</TxtBaseXL>
-                        <br />
-                        <TxtBase>
-                            With over a dozen different blend modes unlock endless diffrent combinations of noise patterns.
-                        </TxtBase>
-                        <br />
-                        <img
-                            src={BlendingImage}
-                            alt='Blending'
-                            className='pointer-events-none'
-                        />
-
-                        <br />
-                        <TxtBaseXL>Filters</TxtBaseXL>
-                        <br />
-                        <TxtBase>
-                            Further enhance your images with the given colour filters.
-                        </TxtBase>
-                        <br />
-                        <img
-                            src={FiltersImage}
-                            alt='Filters'
-                            className='pointer-events-none'
-                        />
+                        <CenteredImageContent
+                            image={FiltersImage}
+                            imageAlt='Filters'
+                            title='Filters'
+                            summary='Further enhance your images with the given colour filters.' />
 
                         <br />
                         <TxtBaseXL>Export</TxtBaseXL>
