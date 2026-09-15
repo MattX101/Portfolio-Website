@@ -54,8 +54,8 @@ function LoadPage() {
         <div className='py-4'>
             <PageSection>
                 <div className='bg-primary-light-s2l6 dark:bg-primary-dark-s2l3 p-2'>
-                    <div className='grid grid-cols-5 grid-rows-1'>
-                        <div>
+                    <div className='lg:grid lg:grid-cols-5 lg:grid-rows-1'>
+                        <div className='grid grid-cols-6 lg:block lg:grid-cols-1'>
                             <BtnButton
                                 text='About Me'
                                 id={null}
@@ -92,11 +92,18 @@ function LoadPage() {
                                 className={getTabClassName(AboutWebsiteIndex)}
                                 onAction={() => switchTab(AboutWebsiteIndex)} />
 
-                            <ContactMeTab />
+                            {/*<div className='hidden lg:block'>
+                                <ContactMeTab />
+                            </div>*/}
                         </div>
 
                         <div className='col-span-4 bg-primary-light-s1l3 dark:bg-primary-dark-s1l1'>
                             {renderTab()}
+
+                            {/*<div className='block lg:hidden'>
+                                <ContactMeTab />
+                            </div>*/}
+                            <ContactMeTab />
                         </div>
                     </div>
                 </div>
