@@ -14,8 +14,17 @@ import ColouringImage from '../../../src/images/Colouring.png'
 import BlendingImage from '../../../src/images/Blend Modes.png'
 import FiltersImage from '../../../src/images/Filters.png'
 
+const tab = 'p-2 w-1/4 rounded-4xl ';
+const colors = 'bg-primary-lightHighlight-s2l3 dark:bg-primary-darkHighlight-s2l3 ';
+const hover = 'hover:bg-primary-lightHighlight-s1l6 dark:hover:bg-primary-darkHighlight-s1l1 ';
+const redirectStyle = tab + colors + hover;
+
 function LoadPage() {
     const navigate = useNavigate();
+
+    const redirectToRepo = () => {
+        window.location.href = "https://github.com/MattX101/Procedural-Noise-based-Image-Generator";
+    };
 
     return (
         <div className='py-4'>
@@ -38,6 +47,13 @@ function LoadPage() {
                             This project was inspired by my love of procedural content generation and how math can generate a seemily infinite data while still remaining predictable and understandable.
                         </TxtBase>
                         <br />
+
+                        <BtnButton
+                            text='Github Link'
+                            id=''
+                            className={redirectStyle}
+                            onAction={() => redirectToRepo()} />
+                        <br /><br />
 
                         <TxtHeader>Features</TxtHeader>
                         <br />
@@ -82,7 +98,7 @@ function LoadPage() {
                     <BtnButton
                         text='Back'
                         id=''
-                        className=''
+                        className={redirectStyle}
                         onAction={() => navigate('/home')} />
                 </div>
 

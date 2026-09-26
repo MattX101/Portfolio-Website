@@ -26,6 +26,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
+    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --animate-slidingButton: slidingButton 4s infinite;
@@ -279,6 +280,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1\/4 {
+    width: calc(1 / 4 * 100%);
+  }
   .w-3\/5 {
     width: calc(3 / 5 * 100%);
   }
@@ -332,6 +336,9 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -605,6 +612,9 @@
 .dark {
   --particle-links: hsl(var(--hue), var(--sat1), var(--light_1));
 }
+* {
+  z-index: 10;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -720,8 +730,4 @@
       --tw-drop-shadow-size: initial;
     }
   }
-}
-
-* {
-  z-index: 10;
 }

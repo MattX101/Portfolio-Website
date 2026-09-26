@@ -239,3 +239,7 @@
 .dark {
   --particle-links: hsl(var(--hue), var(--sat1), var(--light_1));
 }
+
+* {
+  z-index: 10;
+}

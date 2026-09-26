@@ -2,6 +2,7 @@ import React from 'react';
 import PageSection from '../../../components/PageSection.tsx';
 import ContentSection from '../../../components/ContentSection.tsx';
 import TxtBase from '../../../components/elements/text/TxtBase.tsx';
+import BtnButton from '../../../components/elements/buttons/BtnButton.tsx'
 import ImgSmallLogo from '../../elements/images/ImgSmallLogo.tsx';
 import LineBreak from '../../elements/LineBreak.tsx';
 import ImgBigLogo from '../../elements/images/ImgBigLogo.tsx';
@@ -9,7 +10,16 @@ import SecondSplit from './skills/splitTabs/SecondSplit.tsx';
 import reactLogo from '../../../images/React Logo.png';
 import dreamHostLogo from '../../../images/DreamHost Logo.png';
 
+const tab = 'p-2 w-1/4 rounded-4xl ';
+const colors = 'bg-primary-lightHighlight-s2l3 dark:bg-primary-darkHighlight-s2l3 ';
+const hover = 'hover:bg-primary-lightHighlight-s1l6 dark:hover:bg-primary-darkHighlight-s1l1 ';
+const redirectStyle = tab + colors + hover;
+
 const AboutWebsiteTab = () => {
+    const redirectToRepo = () => {
+        window.location.href = "https://github.com/MattX101/Portfolio-Website";
+    };
+
     return (
         <>
             <PageSection>
@@ -51,6 +61,13 @@ const AboutWebsiteTab = () => {
                     <br />
                     <TxtBase>Becuase matthewxuereb.com was taken.</TxtBase>
                     <br />
+
+                        <BtnButton
+                            text='Github Link'
+                            id=''
+                            className={redirectStyle}
+                            onAction={() => redirectToRepo()} />
+                        <br /><br />
                 </div>
             </PageSection>
         </>

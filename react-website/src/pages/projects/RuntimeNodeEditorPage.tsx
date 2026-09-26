@@ -14,8 +14,17 @@ import InteractableUIImage from "../../../src/images/Interactable UI Screenshots
 import FixedGridImage from "../../../src/images/Fixed Grid Screenshot.png"
 import SaveStateImage from "../../../src/images/Save State Screenshot.png"
 
+const tab = 'p-2 w-1/4 rounded-4xl ';
+const colors = 'bg-primary-lightHighlight-s2l3 dark:bg-primary-darkHighlight-s2l3 ';
+const hover = 'hover:bg-primary-lightHighlight-s1l6 dark:hover:bg-primary-darkHighlight-s1l1 ';
+const redirectStyle = tab + colors + hover;
+
 function LoadPage() {
     const navigate = useNavigate();
+
+    const redirectToRepo = () => {
+        window.location.href = "https://github.com/MattX101/Runtime-Node-Editor";
+    };
 
     return (
         <div className='py-4'>
@@ -39,6 +48,13 @@ function LoadPage() {
                             This project allowed me to build and deploy runtime applications that do not depend on the Unity Editor for core functionality.
                         </TxtBase>
                         <br />
+
+                        <BtnButton
+                            text='Github Link'
+                            id=''
+                            className={redirectStyle}
+                            onAction={() => redirectToRepo()} />
+                        <br /><br />
 
                         <TxtHeader>Features</TxtHeader>
                         <br />
@@ -73,7 +89,7 @@ function LoadPage() {
                     <BtnButton
                         text='Back'
                         id=''
-                        className=''
+                        className={redirectStyle}
                         onAction={() => navigate('/home')} />
                 </div>
 

@@ -18,8 +18,17 @@ import ColourConversionModesImage from '../../../src/images/Colour Conversion.pn
 import CurvesImage from '../../../src/images/Curves.png'
 import FiltersImage from '../../../src/images/Filters.png'
 
+const tab = 'p-2 w-1/4 rounded-4xl ';
+const colors = 'bg-primary-lightHighlight-s2l3 dark:bg-primary-darkHighlight-s2l3 ';
+const hover = 'hover:bg-primary-lightHighlight-s1l6 dark:hover:bg-primary-darkHighlight-s1l1 ';
+const redirectStyle = tab + colors + hover;
+
 function LoadPage() {
     const navigate = useNavigate();
+
+    const redirectToRepo = () => {
+        window.location.href = "https://github.com/MattX101/MattX101-Utils";
+    };
 
     return (
         <div className='py-4'>
@@ -35,6 +44,13 @@ function LoadPage() {
 
                         <TxtBase>The reason this is its own project is due to the desire to have single a project where all the functionality is handled instead of the same functions deployed across multiple projects with their own modifications.</TxtBase>
                         <br />
+
+                        <BtnButton
+                            text='Github Link'
+                            id=''
+                            className={redirectStyle}
+                            onAction={() => redirectToRepo()} />
+                        <br /><br />
 
                         <TxtHeader>Features</TxtHeader>
                         <br />
@@ -96,7 +112,7 @@ function LoadPage() {
                     <BtnButton
                         text='Back'
                         id=''
-                        className=''
+                        className={redirectStyle}
                         onAction={() => navigate('/home')} />
                 </div>
 
