@@ -4,10 +4,6 @@ Greetings, you have just made it to my portfolio website Github repository, I de
 
 **Link** – matthew-xuereb.com
 
-Why it was developed
-What it demonstrates
-Who it targets
-
 # Tech Stack
 
 - React JS
