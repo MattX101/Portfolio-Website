@@ -33,7 +33,7 @@ function LoadPage() {
                         <TxtBase>A Utility library used by my other projects.</TxtBase>
                         <br />
 
-                        <TxtBase>The reason this is its own project is due to ther desire to have single project where all the work is handled instead of the same functions deployed across multiple projects with their own modifications.</TxtBase>
+                        <TxtBase>The reason this is its own project is due to the desire to have single a project where all the functionality is handled instead of the same functions deployed across multiple projects with their own modifications.</TxtBase>
                         <br />
 
                         <TxtHeader>Features</TxtHeader>
@@ -43,7 +43,7 @@ function LoadPage() {
                             image={ColourImage}
                             imageAlt='Colour'
                             title='Colouring'
-                            summary='Convert a grayscale image into a colour image.'
+                            summary='Converts a grayscale image into a colour image.'
                         />
 
                         <CenteredImageContent
@@ -56,7 +56,7 @@ function LoadPage() {
                             image={BlendModesImage}
                             imageAlt='Colour Blending'
                             title='Colour Blending'
-                            summary='Combines 2 colour images into 1 wholely diffrent image.' />
+                            summary='Combines 2 colour images into 1 diffrent image.' />
                         
                         <RightImageContent
                             image={CurvesImage}
@@ -67,9 +67,9 @@ function LoadPage() {
 
                         <CenteredImageContent
                             image={FiltersImage}
-                            imageAlt='Bluring and Sharpening'
-                            title='Bluring & Sharpening'
-                            summary='An applied filter directly to the image that visually effects the end result.' />
+                            imageAlt='Blurring and Sharpening'
+                            title='Blurring & Sharpening'
+                            summary='An directly applied filter to the image that visually effects the end result.' />
 
                         <br />
                         <TxtBaseXL>Serialisation</TxtBaseXL>
@@ -79,9 +79,9 @@ function LoadPage() {
 
                         <CenteredImageContent
                             image={NoiseImage}
-                            imageAlt='Noise Generaion'
-                            title='Noise Generaion'
-                            summary='Not just the standard Perlin Noise, with various Noise types along with different Fractal patterns achieve near endless possibilities.' />
+                            imageAlt='Noise Generation'
+                            title='Noise Generation'
+                            summary='Not just the standard Perlin Noise, with various Noise functions along with different Fractal patterns achieve a near endless possibilities.' />
                         
                         <LeftImageContent
                             image={MaskImage}

@@ -27,10 +27,10 @@ function LoadPage() {
                         <br /><br />
 
                         <TxtBase>
-                            A UI Node editor used in runtime applications for the purpose of visual programming.
+                            An UI Node editor used in runtime applications for the purpose of visual programming.
                         </TxtBase>
                         <TxtBase>
-                            Its origins date back during the development of my highlight project called Noise based Image Generator.
+                            Its origins date back during the development of my highlight project called Procedural Noise based Image Generator.
                             During its development a visual code editor was needed in order for the application to be properly used during runtime.
                         </TxtBase>
                         <br />

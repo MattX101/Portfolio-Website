@@ -29,13 +29,13 @@ function LoadPage() {
                         <TxtBase>
                             With the power of noise functions an infinite number of noisy images can be generated.
                             Next they are sent to the colouring process, with an endless possibilites only ones understanding of colour theory is the limit.
-                            Once coloured multiply images can be blended together to produce images that standard noise function only cannot possuibly generate.
+                            Once coloured multiply images can be blended together to produce images that standard noise functions cannot possibly generate.
                             Lastly filters can be applied to further enchance the image to a desired outcome.
                         </TxtBase>
                         <br />
 
                         <TxtBase>
-                            This project was inspired by my love of procedural content generation and how math can generate a seemily infinite data while still remaining preditable and understandable.
+                            This project was inspired by my love of procedural content generation and how math can generate a seemily infinite data while still remaining predictable and understandable.
                         </TxtBase>
                         <br />
 
@@ -48,14 +48,14 @@ function LoadPage() {
                             title='Noise'
                             summary='Not just the standard Perlin Noise,
                             with various Noise types along with different
-                            Fractal patterns achieve near endless possibilities.' />
+                            Fractal patterns achieve a near endless possibilities.' />
 
                         <LeftImageContent
                             image={ColouringImage}
                             imageAlt='Colouring'
                             title='Colouring'
                             summary='Whether a single colour or a more advanced multi-colour gradient,
-                                    only your understanding in colour theory is the limit.'
+                                    only your understanding of colour theory is the limit.'
                         />
 
                         <CenteredImageContent
